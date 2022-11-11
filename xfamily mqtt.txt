@@ -1,0 +1,50 @@
+mqtt:
+
+ReportSystemInfo v1.0 1588865823311310848
+{"ammeter":0.07,"capabilities":{"currentType":"ac","maxCurrent":32.0,"phases":1,"ports":1,"screen":"9.7"},"setting":{"content":{},"cpErrorRange":0,"defaultLightColor":"#00ff00","earthDisabled":true,"intervalCancelCharge":90,"intervalChargeReport":60,"intervalStandby":90,"intervalStartDelayFee":1800,"ports":{"1":{"enabled":true,"lockEnabled":false,"powerPhase":1,"powerSupply":32.0,"powerSupplyPercent":100}},"powerFactor":1.0,"radar":{"enabled":false},"vErrorRange":15},"version":"firmware:v1.1.1807.1;app:v2.2.10.23","time":"20221105200825"}
+
+RequestChargeQRCode v1.0 1588865997802745856
+{"sid":"20019","port":1,"time":"20221105200908"}
+
+RequestSetting v1.0 1588866413437300736
+{"sid":"20020","time":"20221105201047"}
+
+ReportPlugStatus v1.0 1588867117610610688
+{"sid":"20021","port":1,"time":"20221105201335","connected":false}
+
+ReportErrorRecovery v1.0 1588867117468004352
+{"port":1,"time":"20221105201334"}
+
+ReportNetworkStatus v1.0 1588867115979026432
+{online:true}
+
+ReportNetworkStatus v1.0
+{online:false}
+
+
+
+
+
+
+
+senden bestätigt:
+
+ApplySetting v1.0 10000
+{"qrcodeChars":"Stanislaus","port":1}
+
+QuerySystemInfo v1.0 20128
+{}
+
+QueryState v1.0 20228
+{}
+
+ApplySetting v1.0 10012
+{"ports":{"1":{"powerSupply":10.0}}}
+
+ApplySetting v1.0 10019
+{"ports":{"1":{"enabled":true}}}
+
+versuch:
+
+
+
