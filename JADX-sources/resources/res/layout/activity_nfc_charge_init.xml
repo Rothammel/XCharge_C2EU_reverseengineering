@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_jsm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="40px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50px" android:text="@string/personal_nfc_off_line_mode"/>
+        <TextView android:textSize="34px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/personal_nfc_upper_right"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70px">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_qrcode_logo_jt" android:layout_width="110px" android:layout_height="110px" android:src="@drawable/jsm_jt"/>
+                <TextView android:textSize="22px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/jsm_group"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40px">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_qrcode_logo_cd" android:layout_width="110px" android:layout_height="110px" android:src="@drawable/jsm_cd"/>
+                <TextView android:textSize="22px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/jsm_charge"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40px">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_qrcode_logo_cx" android:layout_width="110px" android:layout_height="110px" android:src="@drawable/jsm_cx"/>
+                <TextView android:textSize="22px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/jsm_trip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_default" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nfc_logo"/>
+        <TextView android:textSize="36px" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:text="@string/personal_nfc_start" android:lineSpacingExtra="5px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="@dimen/item_width" android:layout_height="150px" android:layout_marginBottom="30px">
+        <TextView android:textSize="30px" android:textColor="@color/white" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_cur_electrovalence"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15px">
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_phash" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/iv_phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:layout_marginRight="5px" android:src="@drawable/ic_charger_type_single"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

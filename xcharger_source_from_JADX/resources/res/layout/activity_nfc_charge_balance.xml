@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="44px" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_cost_title"/>
+        <LinearLayout android:gravity="left" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30px">
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5px"/>
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5px"/>
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5px"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_one_text"/>
+</FrameLayout>

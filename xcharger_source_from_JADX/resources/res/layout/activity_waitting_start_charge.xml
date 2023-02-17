@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+            <TextView android:textSize="100px" android:textColor="@color/white" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="10px"/>
+        </LinearLayout>
+        <TextView android:textSize="40px" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50px" android:text="@string/waitting_start_operation_tips" android:lineSpacingExtra="10px"/>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_one_text"/>
+</FrameLayout>

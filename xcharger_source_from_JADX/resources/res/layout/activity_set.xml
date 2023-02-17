@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_base"/>
+    <TabHost android:id="@+id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="200px" android:layout_marginTop="180px" android:layout_marginRight="200px">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TabWidget android:id="@android:id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_apn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20px" android:layout_marginTop="20px" android:layout_marginRight="20px">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_carrier"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_carrier" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true" android:layout_weight="1"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_apn"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_apn" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_user"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_user" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_pwd"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_pwd" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_mcc"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_mcc" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_apn_mnc"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_mnc" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:text="@string/set_apn_type"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <CheckBox android:id="@+id/cb_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="default"/>
+                            <CheckBox android:id="@+id/cb_supl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="supl"/>
+                            <CheckBox android:id="@+id/cb_net" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="net"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_platform" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20px" android:layout_marginTop="20px" android:layout_marginRight="20px">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_platform_type"/>
+                        <Spinner android:id="@+id/sp_platform" android:background="@null" android:layout_width="150px" android:layout_height="wrap_content" android:layout_marginLeft="10px"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_anyo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="id"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_id" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="type"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_type" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cloudHost"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_cloud_host" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cloudPort"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_cloud_port" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="provider"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_provider" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="magicNumber"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_magic_number" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="qrcode"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_qrcode" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ocpp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Url"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_url" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Model"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_model" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vendor"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_vendor" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_xcharge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="binaryMode"/>
+                                <RadioGroup android:orientation="horizontal" android:id="@+id/rg_binary_mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <RadioButton android:textSize="18px" android:id="@+id/rb_binary_mode_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                    <RadioButton android:textSize="18px" android:id="@+id/rb_binary_mode_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                                </RadioGroup>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="region"/>
+                                <Spinner android:id="@+id/sp_region" android:background="@null" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_weight="1"/>
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="broker"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_broker" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="userName"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_user_name" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="password"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_password" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clientId"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_client_id" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="upTopic"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_up_topic" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="downTopic"/>
+                                <EditText android:textSize="20px" android:id="@+id/et_down_topic" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_locale" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20px" android:layout_marginTop="20px" android:layout_marginRight="20px">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_country"/>
+                            <TextView android:textColor="@color/black" android:id="@+id/tv_country" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_weight="1"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_language"/>
+                            <Spinner android:id="@+id/sp_language" android:background="@null" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_weight="1"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_timezone"/>
+                            <Spinner android:id="@+id/sp_timezone" android:background="@null" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_weight="1"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_use_daylight_time"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_daylight_time" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_daylight_time_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_daylight_time_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_currency"/>
+                            <Spinner android:id="@+id/sp_currency" android:background="@null" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_weight="1"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_locale_money_disp"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_money_disp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:singleLine="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_system" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20px" android:layout_marginTop="20px" android:layout_marginRight="20px">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:paddingBottom="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_cp_error_range"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_cp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:paddingBottom="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_voltage_error_range"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_voltage" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:id="@+id/tv_current" android:paddingBottom="5px" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_current" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_disable_earth"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_earth" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_earth_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_earth_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:paddingBottom="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_max_leakage"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_leakage" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_weight="1">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_plug_Charge"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_plug_charge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_plug_charge_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_plug_charge_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_wwlan_polling"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_wwlan" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_wwlan_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_wwlan_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_cp_wait"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_cp_wait" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_cp_wait_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_cp_wait_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:paddingBottom="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_background_color"/>
+                            <EditText android:textSize="20px" android:id="@+id/et_background" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_monitor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_monitor"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_monitor" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_monitor_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_monitor_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_system_using_xcharge_logo"/>
+                            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_xcharge_logo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_xcharge_logo_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_no"/>
+                                <RadioButton android:textSize="18px" android:id="@+id/rb_xcharge_logo_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_yes"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="200px" android:layout_marginRight="200px" android:layout_marginBottom="150px">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <EditText android:id="@+id/et_visual" android:background="@android:color/darker_gray" android:padding="10px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <android.inputmethodservice.KeyboardView android:id="@+id/keyboard_view" android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:keyTextColor="#00ff00" android:keyPreviewLayout="@layout/keyborad_preview_layout" android:keyPreviewHeight="40dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="24px" android:textColor="@color/white" android:id="@+id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60px" android:text="@string/set_bottom_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="18px" android:textColor="@color/white" android:id="@+id/bt_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:layout_above="@+id/tv_hint" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

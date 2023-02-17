@@ -1,0 +1,454 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properti
+ es
+SHA1-Digest: 7vLNKJart2eusffG7bq1Tkh+yiw=
+
+Name: res/drawable-hdpi-v4/ic_hourglass.png
+SHA1-Digest: BSJdwxRrxaMeytN/kIcJsmriRVc=
+
+Name: res/drawable-hdpi-v4/ic_loading_bg.png
+SHA1-Digest: hZyhCeVHf7e8c7ed11cr6FzN/Mk=
+
+Name: res/drawable-hdpi-v4/ic_net_work_error.png
+SHA1-Digest: mnxL2cZ0UxU7EhcLxgWZY/85F/Y=
+
+Name: res/raw/anyo_cfg.json
+SHA1-Digest: qzMHMAChlk1JxkMdqzhJbSfxTYo=
+
+Name: res/drawable-hdpi-v4/ic_company.png
+SHA1-Digest: gYz2mHjmGyLBW6YUsFGSBVSfUsI=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: I3MP0NXnINH3Gb4a/IxI+nMF2mw=
+
+Name: res/drawable-hdpi-v4/ic_cloud.png
+SHA1-Digest: PNnDbYIk33VBYJYvKlrz/mEgtMU=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_wifi.png
+SHA1-Digest: 7QrP3CebSYUScqbYiExWzBOgnO0=
+
+Name: res/raw/pubkey.crt
+SHA1-Digest: uICvfyv78jFlmKIGTcCAjOeEj+Q=
+
+Name: res/raw/migrate_in.sql
+SHA1-Digest: UD7a/fAVn9Iw4DLx/9DXfikuEgU=
+
+Name: res/layout/activity_test_charge.xml
+SHA1-Digest: pqcI3zP3En2QKMi+KcjVo9hUbzs=
+
+Name: res/layout/activity_charging.xml
+SHA1-Digest: QPrqRN2lePRPYgxZz1tONG8R8Xk=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_2g.png
+SHA1-Digest: AUCnfnvfb7cTVbYTsb+gcoI5AzU=
+
+Name: res/layout/layout_spinner_item.xml
+SHA1-Digest: LQLxNDT0sIkdzXUv70R1XoepTvo=
+
+Name: res/raw/apk_update_adb_shell.script
+SHA1-Digest: Sgenaa8HfVsubWrmzd7HErV0l7g=
+
+Name: it/sauronsoftware/ftp4j/extrecognizers/textualexts
+SHA1-Digest: J2oLC1u/rXo2+rkiletDXVNrBec=
+
+Name: res/drawable-hdpi-v4/ic_disable.png
+SHA1-Digest: 8BvoELNrd96roJvn9x7j42J7H3Q=
+
+Name: assets/anyo/plugout.jpg
+SHA1-Digest: 7M0f3Wcaxsr/w9M9cH5cmtxYKQ8=
+
+Name: res/layout/dialog_idle.xml
+SHA1-Digest: W8B8gk2NV21CEv9JBl7dQlBTBG0=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_4g.png
+SHA1-Digest: 44HIqH/oGa1WTRX54OQ4jv+QPp0=
+
+Name: res/anim/zoomin.xml
+SHA1-Digest: iXMrLXjfqV+VsxIY3KS7EhJM2Y0=
+
+Name: res/drawable-hdpi-v4/jsmlogo.png
+SHA1-Digest: xDiNXYXkvY8Rfu36WxcmmsPQUuw=
+
+Name: res/drawable-hdpi-v4/dialog_loading_2.png
+SHA1-Digest: kVlicS13T/G9sy5Gi2MIe8+hxA8=
+
+Name: rule.json
+SHA1-Digest: mMYkTDwdk9o1ZUL7sBc+6qY4iNg=
+
+Name: res/drawable-hdpi-v4/ic_signal_2.png
+SHA1-Digest: dueSv4MwP3zNv808W+4epXRLeEY=
+
+Name: res/drawable-hdpi-v4/dialog_loading_1.png
+SHA1-Digest: Zp8dJ2rfGfrxEd5RAVkioGevm1E=
+
+Name: res/drawable-hdpi-v4/xcharge_logo.png
+SHA1-Digest: UbMTgMXocmGVoy65dfp55YEvN98=
+
+Name: res/raw/migrate.sql
+SHA1-Digest: +cZ44IrInxSiumf6iQZWGRQTT6Y=
+
+Name: res/drawable-hdpi-v4/ic_drive_away_timeout.png
+SHA1-Digest: 1+w2P+CRwLDugs+S2S5iTI4f3H4=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.prope
+ rties
+SHA1-Digest: //o6YVblxJWRjh5t4YE9smLlCug=
+
+Name: res/drawable-hdpi-v4/ic_loading_icon.png
+SHA1-Digest: kvmPddTXlyOiRfW2ZOoLAvsbuI4=
+
+Name: res/drawable-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: GVIfdEOBv4gEny2T1jDhGGsZOBo=
+
+Name: res/drawable/ad_bg.xml
+SHA1-Digest: AuhSane++XeClSIhdSpvb5YnqXs=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties
+SHA1-Digest: vOL7i+rFq1wGrpnm0940Hzoa9vg=
+
+Name: res/drawable-hdpi-v4/ic_charger_type_unkown.png
+SHA1-Digest: kyZzZTgJz8I2Oz6DrmuI9kPB12A=
+
+Name: res/anim/galleryin.xml
+SHA1-Digest: AXChvXe7u6uentzeRo93PBGGKqo=
+
+Name: res/drawable-hdpi-v4/dialog_loading_6.png
+SHA1-Digest: v3qs9ZtfIrPrdFMPSMT7UlI6Sxo=
+
+Name: res/layout/activity_find_object.xml
+SHA1-Digest: tA4af18RFoRkG7yzu8Com5roBHY=
+
+Name: assets/anyo/com.xcharge.charger.data.provider.setting.xml
+SHA1-Digest: 7XDCP6MamCm66eAXK2YCMmblZiU=
+
+Name: res/layout/dialog_loading_view.xml
+SHA1-Digest: NaVFpKDDP6aks7ffCgFz2m0gpcM=
+
+Name: res/layout/activity_ad.xml
+SHA1-Digest: Xt8yF6E73SAW9B/dMM9SlwnfF9c=
+
+Name: res/layout/dialog_verification.xml
+SHA1-Digest: 2dJA+3bZxksU9z42hUf2Zbg2JYM=
+
+Name: res/layout/activity_welcome.xml
+SHA1-Digest: BNCxt/bYmEyZMDyoFXdd83RqqwA=
+
+Name: resources.arsc
+SHA1-Digest: hrEH4pBmKiMtH8n300LduRBVg8o=
+
+Name: res/drawable-hdpi-v4/ic_charger_type_single.png
+SHA1-Digest: tRGMaTWfW/pPBbGixoCg28D7nVg=
+
+Name: AndroidManifest.xml
+SHA1-Digest: xwgpqKRILmu0vLr7no6rg6hu2Qc=
+
+Name: res/drawable-hdpi-v4/aylogo.png
+SHA1-Digest: bBycAB9wOKdAwVBQcxhQvzhNwbs=
+
+Name: res/anim/slide_dowm.xml
+SHA1-Digest: hP8z6zrGjvaUbB2GNz5CThpkv3g=
+
+Name: assets/anyo/wakeup.jpg
+SHA1-Digest: Cbl/OKcIhamJxIizL+0xmFVPoEY=
+
+Name: res/drawable-hdpi-v4/toast_bg.9.png
+SHA1-Digest: pMq9UnDe9a8CR7oH2feBFxylbug=
+
+Name: res/drawable-hdpi-v4/ic_lock.png
+SHA1-Digest: uJDu61E+4o9vOMnn4A1ISgGI4Pg=
+
+Name: res/xml/character_softkeyboard.xml
+SHA1-Digest: uQCpF7P4f8c++2cCR18AYUmUxBA=
+
+Name: about.html
+SHA1-Digest: zptm3IUd9jAVKaTA5YZSe2qfhOc=
+
+Name: res/layout/layout_popwindow.xml
+SHA1-Digest: vPm1IPghY3NnqtCXWVs8UO3CCDw=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_3g.png
+SHA1-Digest: YIR8hMjza645E40Bg61s/eaovrc=
+
+Name: res/anim/scaleout.xml
+SHA1-Digest: 9B8tvKFVKVtM3GQu2rFoDlp+tbg=
+
+Name: res/drawable-hdpi-v4/ic_signal_0.png
+SHA1-Digest: A7QjFeTP0iUPoVjionCPcPXOwEI=
+
+Name: res/drawable-hdpi-v4/ic_signal_3.png
+SHA1-Digest: RTvBK2cOtWdXHebZeDNGl9EQC6Y=
+
+Name: res/drawable-hdpi-v4/ic_welcome_logo.png
+SHA1-Digest: K2X283NLngzvYunBn4HwMkxndC8=
+
+Name: res/drawable-hdpi-v4/jsm_cx.png
+SHA1-Digest: Of/g0yG91VH3956/XEoRmugkn2M=
+
+Name: res/drawable-hdpi-v4/dialog_loading_5.png
+SHA1-Digest: kSZtJdJOCRXpUIQxzufQJX6pIsM=
+
+Name: res/drawable-hdpi-v4/dialog_loading_3.png
+SHA1-Digest: Bdu2nM3t1ffS8NfG+3VV9+2A8+8=
+
+Name: res/drawable-hdpi-v4/ic_invalid_car.png
+SHA1-Digest: 4auTEuO0cE8d64g8rU5EKjQvKRY=
+
+Name: res/layout/activity_qrcode.xml
+SHA1-Digest: 9mKRK5gl9jCSvfzq0IFP5MoLhQA=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages.properties
+SHA1-Digest: Lm6k8c8yoiGKoYm8ttJQPxN6D/g=
+
+Name: res/drawable-hdpi-v4/ic_nfc.png
+SHA1-Digest: A2F+LmmiPVf62bKtZfPWhjkDY/o=
+
+Name: res/drawable-hdpi-v4/ic_nfc_logo.png
+SHA1-Digest: 4daSoevzo/fab8An4K/JAP6oQUs=
+
+Name: classes.dex
+SHA1-Digest: r+3aLfSXtu/YctKahWuth4TXq8k=
+
+Name: res/layout/activity_nfc_charge_init.xml
+SHA1-Digest: gQsQSYmrtDwO3z8jB8Xj5ll0190=
+
+Name: res/drawable-hdpi-v4/ic_cloud_error.png
+SHA1-Digest: tpB+AxAcgfCvK5R8nT1beUUBsW8=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_disconn.png
+SHA1-Digest: 0c4lhSGF4eArP8F43s9p43vhJus=
+
+Name: res/drawable-hdpi-v4/ic_park_busy.png
+SHA1-Digest: Nr/cTXViKrt0Dat1IiQMPujVfKM=
+
+Name: res/layout/layout_status_one_text.xml
+SHA1-Digest: nhvHUm1NcFOLNHxgzCbIEpmnptQ=
+
+Name: res/drawable-hdpi-v4/ic_charger_type_dc.png
+SHA1-Digest: Rm+C/lJDsybUy+HZkhahNP+FBpQ=
+
+Name: org/eclipse/paho/client/mqttv3/logging/jsr47min.properties
+SHA1-Digest: 167woanA6ZwSAvqF7XOxtXb31Ms=
+
+Name: res/layout/activity_charge_cost.xml
+SHA1-Digest: gUxih8/cvSjGrcP9ieL7GjiUfjw=
+
+Name: res/xml/letter_softkeyboard.xml
+SHA1-Digest: d1CBzpI4Xwsq5GoalcsaapcqGfY=
+
+Name: res/raw/except_anyo_piles.json
+SHA1-Digest: omiSzYOAYUMenWX5Urv8QmZTulc=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: P9MhjeHitfRzBssR5nnr7e1wiK8=
+
+Name: res/anim/slide_up.xml
+SHA1-Digest: qNjF9zaxr5ZGHcv/vFfG9I/glwM=
+
+Name: okhttp3/internal/publicsuffix/publicsuffixes.gz
+SHA1-Digest: +bdceAw9yQ7uKnkFzDSoze/ZLGc=
+
+Name: res/anim/scalein.xml
+SHA1-Digest: lO6weKC027G2+QwLD2iX56mRC40=
+
+Name: res/drawable-hdpi-v4/ic_signal_1.png
+SHA1-Digest: 1/dvI15bB0Zc+IV5HYCSootopns=
+
+Name: res/drawable-hdpi-v4/ic_book.png
+SHA1-Digest: 0jestNCW6LRPJuoIMUbPP1Y7Uok=
+
+Name: res/raw/ocpp_cfg.json
+SHA1-Digest: TmYhvGDZVnKpNmNVAiEqpVUNVoE=
+
+Name: res/drawable-hdpi-v4/ic_charger_type.png
+SHA1-Digest: usXpVoFma2NU68uum4bMaJz69oo=
+
+Name: bundle.properties
+SHA1-Digest: LOAP7Ct8n8AuP1nSM5aNsMnHXsE=
+
+Name: res/layout/keyborad_preview_layout.xml
+SHA1-Digest: TiXHEZK8Z7WLiAONPlpZjjw5zic=
+
+Name: res/layout/custom_toast_view.xml
+SHA1-Digest: hx56rBaxfFQLa5UT38jWTjaJUkQ=
+
+Name: assets/anyo/scan.jpg
+SHA1-Digest: Cbl/OKcIhamJxIizL+0xmFVPoEY=
+
+Name: res/raw/xmsz_cfg.json
+SHA1-Digest: XQfqdmuEbo6IfNtaO5qjizNm+7E=
+
+Name: res/raw/droptable.sql
+SHA1-Digest: os/WI6hIVbpAkr+VM1/G4Y7mX4A=
+
+Name: res/raw/migrate_out.sql
+SHA1-Digest: OrFhco1fgfKYiizL96GMh8Bqr/k=
+
+Name: res/layout/activity_nfc_charge_balance.xml
+SHA1-Digest: 9RBmdSgxBV7CokXL4U5fxge6aO4=
+
+Name: res/layout/activity_waitting_start_charge.xml
+SHA1-Digest: eUuf1hEhzCPWfN4qFmiBPTH857I=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.prope
+ rties
+SHA1-Digest: JJcQnWYZ4Rmh1haNRNNQJwYoNUM=
+
+Name: res/drawable-hdpi-v4/ic_triangle.png
+SHA1-Digest: wIFG7av8vmNaqJH1vtizNO++sLk=
+
+Name: res/raw/country_list.json
+SHA1-Digest: PQMZipPDYTg68gK/ZREzTB5E3wg=
+
+Name: res/anim/loading_rotate.xml
+SHA1-Digest: 88H5kRRAkq1uixwBZWOtYCHFEMw=
+
+Name: res/anim/galleryout.xml
+SHA1-Digest: AXChvXe7u6uentzeRo93PBGGKqo=
+
+Name: res/layout/layout_bottom_one_text.xml
+SHA1-Digest: 3MX4MMb2cZV+D17MQskBF5bRONA=
+
+Name: res/anim/rotate.xml
+SHA1-Digest: wKHhIaPrEMNF7kzGFmFeFecg93Y=
+
+Name: res/drawable-hdpi-v4/ic_repair_status.png
+SHA1-Digest: B6dLZIoficGGxbuVTcUTW5SEVE4=
+
+Name: res/drawable-hdpi-v4/ic_invalid.png
+SHA1-Digest: CeHCqQpwQ0O7wY4qy6cGtmxD7Q0=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: UCzYT6RE8m1+z99KNVBkhnl38jY=
+
+Name: res/raw/xcloud_family_mqtt_ops.json
+SHA1-Digest: gbP/1B9lRdqxb+IKStz2o1p65cs=
+
+Name: res/drawable/prewlayout_bg.xml
+SHA1-Digest: A7VEe3/ZxZsW+tUro+hy8QmC8UU=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properti
+ es
+SHA1-Digest: 8CW0yexAOsySf0R4WK4GUImcEOo=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properti
+ es
+SHA1-Digest: 4gWk9C+9G/FnD8oUQxYBajciNzg=
+
+Name: res/drawable-hdpi-v4/ic_waiting_connect.png
+SHA1-Digest: aZqrpyyrGKr+jy3q9nperTF2iCI=
+
+Name: res/drawable-hdpi-v4/jsm_jt.png
+SHA1-Digest: g0X1Qes8XAwxlgscZHB05IVvkRc=
+
+Name: res/drawable-hdpi-v4/ic_waitting.png
+SHA1-Digest: BSJdwxRrxaMeytN/kIcJsmriRVc=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properti
+ es
+SHA1-Digest: +TdPTfO0daWLzIOdd3iqDbqQeH0=
+
+Name: res/drawable-hdpi-v4/ic_paid.png
+SHA1-Digest: XMR4ZN4ZKmOwMBRMByZEe8yTZZ0=
+
+Name: res/drawable-hdpi-v4/ic_nfc_reading.png
+SHA1-Digest: pV/qzROAYT92zFvPAPJ1Xtbpphw=
+
+Name: res/drawable-hdpi-v4/jsm_cd.jpg
+SHA1-Digest: ftKk9KpAYwmghTOhoZ4Ul5nY90E=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properti
+ es
+SHA1-Digest: Z+RbaGWWXv13ZUcVIZI7s/mzDYE=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properti
+ es
+SHA1-Digest: 8DRfc6cyhI8idNDPhAF7vjOAPaI=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.prope
+ rties
+SHA1-Digest: XFMIe69MgY+w0d8ytEmm9HFH9lc=
+
+Name: res/drawable-hdpi-v4/ic_unlock.png
+SHA1-Digest: RRmyF3j0Z30JyYprFf/mAuOiGB4=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: RQ09RDJf3yWYEKYOavo2ED4Yaz0=
+
+Name: res/drawable-hdpi-v4/base_bg.png
+SHA1-Digest: zcWjiJC4Q9UBrVxRWJwxr2rxJZ0=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properti
+ es
+SHA1-Digest: +EuiFSQmW4QazHoIArdx22JRw1I=
+
+Name: res/layout/activity_nfc_config_persnal_card.xml
+SHA1-Digest: QmbcJXDQAyBQ5K1ufhagy4aBWYA=
+
+Name: res/drawable-hdpi-v4/ic_charger_type_three.png
+SHA1-Digest: usXpVoFma2NU68uum4bMaJz69oo=
+
+Name: res/layout/activity_charge_complete.xml
+SHA1-Digest: isbKevA0CqBE3zuk4xvfR1e0ZCQ=
+
+Name: res/drawable-hdpi-v4/dialog_loading_4.png
+SHA1-Digest: oufKmrFRHTiHhilupe24KRJTyik=
+
+Name: res/layout/activity_nfc_charge_waitting_start.xml
+SHA1-Digest: 7heAZJyZUWNdt/YT9tWxC+BaXek=
+
+Name: res/anim/zoomout.xml
+SHA1-Digest: driOGIV7+PS7GAnXioC3SPkV8f8=
+
+Name: res/anim/zoomout2.xml
+SHA1-Digest: iYVM1J4cLOt4AEX3C3a/D80A+oU=
+
+Name: res/drawable/dialog_loading_anim.xml
+SHA1-Digest: gtKOITCgTEDtEJzVGQqsiiWvPi8=
+
+Name: res/layout/dialog_show_info.xml
+SHA1-Digest: WmbjhNkzPa0UBq5XyYTW9V4L5/Y=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properti
+ es
+SHA1-Digest: E0ZOtn0JdEhivGeB2lmZM3Cy5kI=
+
+Name: res/layout/layout_bottom_two_line.xml
+SHA1-Digest: cGthZXwjrZfTWPMbd3jiyZ2RczE=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properti
+ es
+SHA1-Digest: 2n6VgTEc5EpURE6+O6kftBvkOGA=
+
+Name: res/layout/activity_set.xml
+SHA1-Digest: x8WehlQcXoh4Lajx91/eCmnjFZ4=
+
+Name: res/layout/layout_base.xml
+SHA1-Digest: mQmJx/y3VpEYIurWOCwYLv3uzn8=
+
+Name: res/layout/activity_base_status.xml
+SHA1-Digest: rA9WbBydi0HGgt39T3gctLjPbxM=
+
+Name: res/drawable-hdpi-v4/ic_net_icon_line.png
+SHA1-Digest: hCWSLjcOLrceOohMjVA+5ROCwYA=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properti
+ es
+SHA1-Digest: q25RLlrysdGwuZFoUDCYJTLYzzE=
+
+Name: res/drawable-hdpi-v4/ic_dialog_loading_point.9.png
+SHA1-Digest: uL8jPDQFa8wpxP6JO8ThcZfxDZ0=
+
+Name: res/layout/activity_nfc_charge_fin.xml
+SHA1-Digest: mr90Hr66BTaorgIpmVqltjCuFAQ=
+
+Name: res/layout/activity_nfc_charging.xml
+SHA1-Digest: XT6A68ykm0cbjv+LATvJz5rwQt4=
+
+Name: res/drawable-hdpi-v4/ic_signal_4.png
+SHA1-Digest: 2YzSMFu1ciejAdrKBDDiEYhJV6g=
+
+Name: res/drawable-hdpi-v4/ic_park_unknow.png
+SHA1-Digest: 7KkG2YXgLE5K9hLZU2ZLagTKudU=
+

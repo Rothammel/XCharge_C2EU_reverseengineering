@@ -1,0 +1,251 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "apk\\xcharger_original.apk"
+  ],
+  "treeExpansions": [],
+  "codeData": {
+    "comments": [
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudPortHandler",
+          "shortId": "handleCloudResponse(Lcom/xcharge/charger/protocol/family/xcloud/bean/XCloudMessage;Lcom/xcharge/charger/protocol/family/xcloud/bean/XCloudMessage;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 154
+        },
+        "comment": "hier wird der QR Code Empfang geloggt"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "handleRequestTimeout(Lcom/xcharge/charger/protocol/family/xcloud/bean/XCloudMessage;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 21
+        },
+        "comment": "MSG_REQUEST_TIMEOUT"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "handleSendMsgFail(Lcom/xcharge/charger/protocol/family/xcloud/bean/XCloudMessage;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 21
+        },
+        "comment": "MSG_SEND_FAIL"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "onMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        "comment": "MQTT Nachrichten senden"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "parseXCloudMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/xcharge/charger/protocol/family/xcloud/bean/XCloudMessage;"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 512
+        },
+        "comment": "AnswerHello"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "sendSayHello()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 59
+        },
+        "comment": "MSG_SEND"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testApplySetting()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 20
+        },
+        "comment": "ApplySetting"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testFeePolicySetting()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 20
+        },
+        "comment": "ApplySetting"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testUIDeviceCodeSetting()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 11
+        },
+        "comment": "QRcode als Chars? ApplySetting"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testUIDeviceCodeSetting()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 20
+        },
+        "comment": "ApplySetting"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testVerification()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 10
+        },
+        "comment": "Shenzhen Smart Charge"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+          "shortId": "testVerification()V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 51
+        },
+        "comment": "RequestVerification"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent$MsgHandler",
+          "shortId": "handleMessage(Landroid/os/Message;)V"
+        },
+        "codeRef": {
+          "attachType": "INSN",
+          "index": 389
+        },
+        "comment": "MSG_RECEIVE"
+      }
+    ],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudProtocolAgent",
+      "subPath": "java",
+      "caret": 15403,
+      "view": {
+        "x": 0,
+        "y": 5041
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.xcharge.charger.protocol.family.xcloud.bean.DeviceSetting",
+      "subPath": "java",
+      "caret": 5504,
+      "view": {
+        "x": 0,
+        "y": 2503
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.xcharge.charger.protocol.family.xcloud.handler.XCloudPortHandler",
+      "subPath": "java",
+      "caret": 51415,
+      "view": {
+        "x": 0,
+        "y": 13407
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.xcharge.charger.protocol.family.xcloud.bean.cloud.SendChargeQRCode",
+      "subPath": "java",
+      "caret": 601,
+      "view": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "type": "class",
+      "tabPath": "com.xcharge.charger.protocol.family.xcloud.bean.XCloudMessage",
+      "subPath": "java",
+      "caret": 4800,
+      "view": {
+        "x": 0,
+        "y": 1308
+      }
+    }
+  ],
+  "activeTab": 4,
+  "cacheDir": "xcharger.apk.cache",
+  "enableLiveReload": false,
+  "searchHistory": [
+    "receive qrcode update request for port",
+    "setSessionId",
+    "setSrcId",
+    "getQrCode",
+    "SendChargeQRCode",
+    "incrementAndGet",
+    "getSessionId",
+    "maybe timeout to wait for response msg:",
+    "缓存大小！！！！＝＝＝＝",
+    "qrcodeChars",
+    "qrcodeContent",
+    "qrcode",
+    "handleSendChargeQRCode",
+    "ChargeQRCode",
+    "setMaxCurrent",
+    "AdjustAmp",
+    "adjustAmp",
+    "MaxCurrent",
+    "ApplySetting",
+    "ReceivedMsg",
+    "getMessageByMessageId",
+    "onMessage",
+    "mqttReceiver",
+    "mqtt",
+    "getSid()",
+    "sid",
+    "getsid()",
+    "AnswerHello",
+    "69637",
+    "einge"
+  ]
+}

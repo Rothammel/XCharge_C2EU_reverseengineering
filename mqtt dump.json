@@ -1,0 +1,2655 @@
+{
+  "info" : "MQTT.fx dump of received messages",
+  "version" : "5.2.0 - Standard Edition",
+  "topic" : "test/up",
+  "date" : "2022/11/05 21:11:13",
+  "messages" : [ {
+    "id" : "e7937d18-9b30-4a6d-93e8-406625da5bca",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:31.74791498",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588981109568696320\n{\"sid\":\"20028\",\"time\":\"20221106034632\"}"
+  }, {
+    "id" : "d57c22b3-c6e5-45e8-853c-6ee212811561",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:31.74791700",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981110193647616\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034633\"}"
+  }, {
+    "id" : "d8be38dd-3d7f-4bfc-ad5b-5bd8fded7570",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:31.74791746",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981110738907136\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034633\"}"
+  }, {
+    "id" : "f51adb16-dd64-42fa-aff5-6bfc796308e4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:42.74802759",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981156117082112\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034644\"}"
+  }, {
+    "id" : "7dd88df8-09c7-444c-a169-0460cbc35038",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:42.74802819",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981156297437184\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034644\"}"
+  }, {
+    "id" : "a5d582f2-d2c0-4585-a959-d53c2c3dbf21",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:52.74812795",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981198542467072\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034654\"}"
+  }, {
+    "id" : "7f40519f-5cae-41dd-92b3-2995edc79a3c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:46:52.74812849",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981198894788608\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034654\"}"
+  }, {
+    "id" : "a8f0030a-27fa-4ced-9283-38a3309f6414",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:01.74821609",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588981235825635328\n{\"sid\":\"20028\",\"time\":\"20221106034703\"}"
+  }, {
+    "id" : "a61451ed-70c6-47e9-8ed7-46597efff0d3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:02.74822801",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981240997212160\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034704\"}"
+  }, {
+    "id" : "5b0aba19-61d9-4270-a7ce-b62c96243a60",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:03.74823844",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981245015355392\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034705\"}"
+  }, {
+    "id" : "800c250b-b7ff-4391-9ffd-d21de46122f8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:12.74832869",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981283187716096\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034714\"}"
+  }, {
+    "id" : "af123429-17d6-4fd9-a061-c9103c6a6dd7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:14.74834096",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981287323299840\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034715\"}"
+  }, {
+    "id" : "58c4ee30-7c4e-499d-b9e1-1de014e8e75c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:23.74843925",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981329417334784\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034725\"}"
+  }, {
+    "id" : "2e0125eb-3c23-4e67-b87d-d3bc8c3c2ce5",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:24.74844949",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981333599055872\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034726\"}"
+  }, {
+    "id" : "e80ba583-f681-4302-b487-597ea927b5a4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:33.74853961",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981371691724800\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034735\"}"
+  }, {
+    "id" : "acc4f09e-e4b6-4f34-999a-12c7629f0c3d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:34.74854970",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981375961526272\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034736\"}"
+  }, {
+    "id" : "ef418ea3-2bc9-4915-9411-1d87efcab2e2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:41.74861948",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588981404713480192\n{\"sid\":\"20028\",\"time\":\"20221106034743\"}"
+  }, {
+    "id" : "6226f276-fbec-4174-9dd3-bfc53f495b91",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:43.74863995",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981413789954048\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034745\"}"
+  }, {
+    "id" : "ca913e40-2c32-4479-a1b9-bc85b90288fd",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:45.74865983",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981422170173440\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034747\"}"
+  }, {
+    "id" : "4b3a9d0e-f405-489d-98f3-84166aabed21",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:55.74875078",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981460288008192\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034756\"}"
+  }, {
+    "id" : "cdcad558-b742-4d2f-9f96-43f396e318ca",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:47:56.74876079",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981464276791296\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034757\"}"
+  }, {
+    "id" : "d7796ed9-c3e2-496f-8d25-26548dff575f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:04.74884102",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981498158379008\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034805\"}"
+  }, {
+    "id" : "9245123a-73e5-4a40-9b88-fd55f68950e8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:06.74886144",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981506710564864\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034807\"}"
+  }, {
+    "id" : "3b910683-12b0-4e6e-a206-65489b6dd9ed",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:16.74896354",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981548720713728\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034817\"}"
+  }, {
+    "id" : "0284d962-8bc2-4c71-bed9-13f6b0c7bbfe",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:17.74897379",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981553326059520\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034818\"}"
+  }, {
+    "id" : "3eb01de7-b3bd-43b2-8ec7-65f2d43efca4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:24.74904546",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981583168532480\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034825\"}"
+  }, {
+    "id" : "589208d3-73b1-4069-87a5-9d497e4523cc",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:27.74907413",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981595608838144\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034828\"}"
+  }, {
+    "id" : "e1e2e61e-621f-47fd-8b1e-c448c96041ba",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:32.74912126",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588981615275929600\n{\"sid\":\"20028\",\"time\":\"20221106034833\"}"
+  }, {
+    "id" : "3700c03b-a397-425a-b82e-2a65de324bbd",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:36.74916448",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981633810558976\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034838\"}"
+  }, {
+    "id" : "c0121ec2-034a-4d57-ab43-6eb7c4fe4f52",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:38.74918472",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981641825873920\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034839\"}"
+  }, {
+    "id" : "8baa2073-c0dd-4714-bb10-30405416aa01",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:45.74925646",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981671525740544\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034846\"}"
+  }, {
+    "id" : "2233e11f-3a5c-4449-b733-c0a67da5176c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:48.74928474",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981684175761408\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034850\"}"
+  }, {
+    "id" : "ff93524e-5403-402e-86c9-3aebcd856915",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:57.74937725",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981722192932864\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034858\"}"
+  }, {
+    "id" : "e798ed9b-e330-450d-9177-f4e2c259ec63",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:48:59.74939569",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981730451517440\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034901\"}"
+  }, {
+    "id" : "50188385-80bf-40f0-8356-4c3f2c61458f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:06.74946547",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981759954251776\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034908\"}"
+  }, {
+    "id" : "84cd3b9e-bd8e-4e24-9162-e87345c5a4b7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:09.74949604",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981772654604288\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034911\"}"
+  }, {
+    "id" : "13e3ded8-17bc-4cff-a203-86d023a7d997",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:18.74958615",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981810399145984\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034920\"}"
+  }, {
+    "id" : "c240cf57-10f1-4ba4-abc3-36549814f39a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:20.74960663",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981819085549568\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034922\"}"
+  }, {
+    "id" : "7688fb47-1ec6-498a-9cd8-cd51f5618a12",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:27.74967671",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981848617644032\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034929\"}"
+  }, {
+    "id" : "a3da7bfb-2324-49eb-89db-d6bfc191ffe3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:29.74969879",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981856976891904\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034931\"}"
+  }, {
+    "id" : "1e489c09-b338-4638-988f-67324b3e6234",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:32.74972442",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588981868473479168\n{\"sid\":\"20028\",\"time\":\"20221106034933\"}"
+  }, {
+    "id" : "f7328717-c48b-48bb-8813-3e923884ff82",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:38.74978889",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981895098920960\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106034940\"}"
+  }, {
+    "id" : "4e76fa15-297d-4fc4-8ea7-7aaa712af0ac",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:41.74981760",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981907560198144\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106034943\"}"
+  }, {
+    "id" : "04ee5a11-5f42-473b-916d-ad51e01578fb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:48.74988772",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981937159401472\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106034950\"}"
+  }, {
+    "id" : "73bcd004-6be4-43e4-91aa-a1a6466e5db0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:49:50.74990769",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981945464123392\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106034952\"}"
+  }, {
+    "id" : "b54fc2ab-789f-4e82-a12c-a8ef62a3fd34",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:00.75000002",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981983732953088\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035001\"}"
+  }, {
+    "id" : "6cf3e43d-5f67-4ecc-bfd3-d6b9bd635158",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:01.75001828",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588981991848931328\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035003\"}"
+  }, {
+    "id" : "1920c880-17bf-4ff6-8917-87df350d70c6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:09.75009946",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982025957011456\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106035011\"}"
+  }, {
+    "id" : "fcb2fc99-c138-46af-a914-e906cf575e2b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:11.75011018",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982030344253440\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106035012\"}"
+  }, {
+    "id" : "b9d6ee7f-e76c-4051-93b7-f3493881ef79",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:21.75021083",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982072576700416\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035022\"}"
+  }, {
+    "id" : "e969bd73-172a-436f-a935-fbc4ce6ce405",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:22.75022106",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982076125081600\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035023\"}"
+  }, {
+    "id" : "18a3814c-5374-4bae-9c4f-1336c7d97425",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:31.75031115",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982114272276480\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106035032\"}"
+  }, {
+    "id" : "b13edf34-0260-4c7d-b9d7-e933ff47700c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:32.75032138",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982118437220352\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106035033\"}"
+  }, {
+    "id" : "3b8c3871-c5a9-424e-93a3-8b983a74d098",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:42.75042377",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982161294618624\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035043\"}"
+  }, {
+    "id" : "54307993-aa2b-4691-93be-203f801c341a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:42.75042428",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982161584025600\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035043\"}"
+  }, {
+    "id" : "011745ab-8a22-47c7-b931-5716e5f66324",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:42.75042995",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982163865726976\n{\"sid\":\"20028\",\"time\":\"20221106035044\"}"
+  }, {
+    "id" : "5c4ade79-2b07-4069-bf96-1ee986c22e6f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:52.75052210",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982202868559872\n{\"sid\":\"20023\",\"port\":1,\"time\":\"20221106035053\"}"
+  }, {
+    "id" : "18e7359c-ac36-439a-bfa2-ae95380625da",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:50:53.75053232",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982206987366400\n{\"sid\":\"20022\",\"port\":1,\"time\":\"20221106035054\"}"
+  }, {
+    "id" : "4db8170d-5e3b-4098-a4db-adec3fbdcd09",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:03.75063485",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982249920262144\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035104\"}"
+  }, {
+    "id" : "01c40105-cd1f-4ce6-9a48-2d4efb6d696d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:03.75063547",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982249983176704\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035104\"}"
+  }, {
+    "id" : "261edb81-3385-47d8-a14f-56f30ff8cd89",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:09.75069413",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0\n{online:false}"
+  }, {
+    "id" : "b2d519e0-d187-46a5-95a9-eeb7a0e8d38e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:19.75079651",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0 1588982318203531264\n{online:true}"
+  }, {
+    "id" : "ab4510ca-df70-49f0-85b2-232e40d26b32",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080675",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportErrorRecovery v1.0 1588982322343309312\n{\"port\":1,\"time\":\"20221106035121\"}"
+  }, {
+    "id" : "bcb4923e-0cdc-4a75-97b9-466ab785a4f1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080733",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportPlugStatus v1.0 1588982322385252352\n{\"sid\":\"20029\",\"port\":1,\"time\":\"20221106035121\",\"connected\":false}"
+  }, {
+    "id" : "87133fe2-7dc8-4031-8ab9-5e3095e59d7f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080733",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982322435584000\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035121\"}"
+  }, {
+    "id" : "ce9f2b23-373b-49e2-a5fe-b7563ce913c0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080734",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982322485915648\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035121\"}"
+  }, {
+    "id" : "3d5fe81a-2100-4541-9a7e-b95f7f6c909c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080734",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportSystemInfo v1.0 1588982322515275776\n{\"ammeter\":0.07,\"capabilities\":{\"currentType\":\"ac\",\"maxCurrent\":32.0,\"phases\":1,\"ports\":1,\"screen\":\"9.7\"},\"setting\":{\"content\":{},\"cpErrorRange\":0,\"defaultLightColor\":\"#00ff00\",\"earthDisabled\":true,\"intervalCancelCharge\":90,\"intervalChargeReport\":60,\"intervalStandby\":90,\"intervalStartDelayFee\":1800,\"ports\":{\"1\":{\"enabled\":true,\"lockEnabled\":false,\"powerPhase\":1,\"powerSupply\":20.0,\"powerSupplyPercent\":100}},\"powerFactor\":1.0,\"radar\":{\"enabled\":false},\"vErrorRange\":15},\"version\":\"firmware:v1.1.1807.1;app:v2.2.10.23\",\"time\":\"20221106035121\"}"
+  }, {
+    "id" : "62abda40-0c09-49a7-a2d9-3c06de47a0c4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:20.75080735",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982322557218816\n{\"sid\":\"20032\",\"time\":\"20221106035122\"}"
+  }, {
+    "id" : "e706b74b-d8bd-4440-8a01-643378198d22",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:30.75090916",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982365213290496\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035132\"}"
+  }, {
+    "id" : "1d9dfb19-cb30-4aae-82dd-dcaa6ca34843",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:30.75090982",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982365313953792\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035132\"}"
+  }, {
+    "id" : "db7a98dc-514a-4147-880c-2689b9440691",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:41.75101160",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982407642869760\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035142\"}"
+  }, {
+    "id" : "eff9ea50-8e2c-4ac0-90bf-e2942642f9c4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:41.75101364",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982408053911552\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035142\"}"
+  }, {
+    "id" : "de128eef-85b7-4431-be70-459066487ac4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:41.75101975",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982411405160448\n{\"sid\":\"20032\",\"time\":\"20221106035143\"}"
+  }, {
+    "id" : "2067c274-2dc2-4fd9-81a7-34568ea46ac1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:51.75111190",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982450466713600\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035152\"}"
+  }, {
+    "id" : "956aa1eb-4524-4400-9aa9-94f9ae5a1696",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:51:51.75111239",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982450781286400\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035152\"}"
+  }, {
+    "id" : "25cacd68-1138-4bac-b31a-5501fda9bb57",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:02.75122052",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982496012660736\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035203\"}"
+  }, {
+    "id" : "3e7a6b38-29b8-4f20-8143-14b695a0574f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:02.75122115",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982496423702528\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035203\"}"
+  }, {
+    "id" : "7e4225df-b967-4d0c-9502-0a9d8d0b7496",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:11.75131954",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982537716625408\n{\"sid\":\"20032\",\"time\":\"20221106035213\"}"
+  }, {
+    "id" : "b1f3beea-f4d5-4a6c-aaab-454b5a53498d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:12.75132395",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982539406929920\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035213\"}"
+  }, {
+    "id" : "19309fa5-39fb-42b6-9d70-8f841cd643d2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:12.75132442",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982539679559680\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035213\"}"
+  }, {
+    "id" : "2442f02e-66a7-4b73-a309-8acaabddf80d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:23.75143103",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982584474726400\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035224\"}"
+  }, {
+    "id" : "0bdd4af1-ebde-49b3-995e-1d5eaa26258f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:23.75143346",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982584973848576\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035224\"}"
+  }, {
+    "id" : "c25b669e-18cc-49f7-9e4c-626d2fb06996",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:33.75153368",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982627332124672\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035234\"}"
+  }, {
+    "id" : "0af3ee45-0532-4284-a79d-93e57c545689",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:33.75153505",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982627969658880\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035234\"}"
+  }, {
+    "id" : "bb07ad5d-1167-498b-99c3-583541279671",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:44.75164235",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982672982929408\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035245\"}"
+  }, {
+    "id" : "52d38c83-cc1b-4797-9b41-f321d82928fe",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:44.75164303",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982673356222464\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035245\"}"
+  }, {
+    "id" : "971bb7e8-8629-4389-a420-01e7919cd26a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:52.75172222",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982706004684800\n{\"sid\":\"20032\",\"time\":\"20221106035253\"}"
+  }, {
+    "id" : "8a73b42b-70bf-4055-9060-1f9babf11d27",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:54.75174483",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982715488006144\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035255\"}"
+  }, {
+    "id" : "dff189c3-4199-4294-96e4-954969931d66",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:52:54.75174537",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982715785801728\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035255\"}"
+  }, {
+    "id" : "64b20b61-ea41-4d91-8429-0613dd2f909d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:05.75185536",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982761751179264\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035306\"}"
+  }, {
+    "id" : "58ddc9de-d277-4240-bcc1-cdf89b6be4aa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:05.75185581",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982762313216000\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035306\"}"
+  }, {
+    "id" : "539e37cd-5916-497b-a909-5ad9dd039b1a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:15.75195981",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982805682319360\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035317\"}"
+  }, {
+    "id" : "726b95e4-520a-4b0b-8703-ea6f9f75a296",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:16.75196026",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982805938171904\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035317\"}"
+  }, {
+    "id" : "e785ed8f-ac93-4e35-94ef-28b50e2544c0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:26.75206628",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982850246799360\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035328\"}"
+  }, {
+    "id" : "b1f2512c-9c2a-48f4-a600-aa11e46d7467",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:26.75206690",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982850343268352\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035328\"}"
+  }, {
+    "id" : "b5844f2a-1403-4ca8-a094-097b2a0b93be",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:36.75216871",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982892424720384\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035338\"}"
+  }, {
+    "id" : "e2ba9e4b-8b7a-4618-a40b-4707cebadf41",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:36.75216929",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982893049671680\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035338\"}"
+  }, {
+    "id" : "dd39c77f-9614-45bd-a668-0b39829c0b13",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:42.75222398",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588982916617465856\n{\"sid\":\"20032\",\"time\":\"20221106035343\"}"
+  }, {
+    "id" : "0fd2c893-9ece-4a1b-a753-f628ee8eb540",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:47.75227111",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982935487639552\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035348\"}"
+  }, {
+    "id" : "c2269438-0999-4b5c-b97c-e9dc497fd686",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:47.75227725",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982938717253632\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035349\"}"
+  }, {
+    "id" : "433623c1-9cf3-4013-8791-c0390bb19789",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:57.75237675",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982981125861376\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035359\"}"
+  }, {
+    "id" : "53752edf-f927-445b-a803-d64ac0ed7e42",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:53:57.75237889",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588982982027636736\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035359\"}"
+  }, {
+    "id" : "a8be9e19-f57a-4d65-8a71-c3e1971f39c1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:08.75248003",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983023572217856\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035409\"}"
+  }, {
+    "id" : "70565102-41f3-41a4-bdd5-e3a7e63a3a6e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:08.75248818",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983027326119936\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035410\"}"
+  }, {
+    "id" : "d778ab96-8207-456b-aa54-0fc5f0b0fbbd",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:18.75258853",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983069764087808\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035420\"}"
+  }, {
+    "id" : "b715726c-6703-4f37-a113-bce47eb96732",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:19.75259058",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983070678446080\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035420\"}"
+  }, {
+    "id" : "ecc2078a-2f44-4aac-8702-c267d671c836",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:28.75268972",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983112403382272\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035430\"}"
+  }, {
+    "id" : "177dc001-3f28-415e-b5e0-0cfa77a78355",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:29.75269809",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983115817545728\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035431\"}"
+  }, {
+    "id" : "7128dd20-7db8-4412-997d-288141bf4d85",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:39.75279952",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983158096130048\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035441\"}"
+  }, {
+    "id" : "c91f13d0-9e94-419f-b0a7-a5f531cdb475",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:40.75280041",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983158825938944\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035441\"}"
+  }, {
+    "id" : "b3c1a359-016f-41d9-b189-42c923e5bc58",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:42.75282815",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588983169647243264\n{\"sid\":\"20032\",\"time\":\"20221106035444\"}"
+  }, {
+    "id" : "e57d11b0-5720-4af5-8f07-e074e8ad6375",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:50.75290406",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983201813360640\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035451\"}"
+  }, {
+    "id" : "9b53d063-7031-4a30-a350-4a37baa6714f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:54:50.75290450",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983202039853056\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035451\"}"
+  }, {
+    "id" : "94613ea6-6348-4cb9-be20-de2f237338f7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:01.75301042",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983246713384960\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035502\"}"
+  }, {
+    "id" : "38adc809-bb48-48b3-b44f-bd780bba5d9d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:01.75301127",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983247258644480\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035502\"}"
+  }, {
+    "id" : "12a81cc6-3d26-4fbd-ae81-0a10319455d3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:11.75311288",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983289776304128\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035512\"}"
+  }, {
+    "id" : "fba59977-5606-4a1b-b59a-26cef317e16a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:11.75311488",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983290522890240\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035512\"}"
+  }, {
+    "id" : "96adae97-9562-469e-b1f5-a7a3ddcc41bf",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:22.75322137",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983335003484160\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035523\"}"
+  }, {
+    "id" : "b965817e-5d4d-4878-9d2d-03f6dddb5923",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:22.75322239",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983335615852544\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035523\"}"
+  }, {
+    "id" : "2e55c532-1207-4161-80ac-c71e8fdfa9a4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:32.75332377",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983378058014720\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035533\"}"
+  }, {
+    "id" : "36214195-6464-4e8d-88ea-60f906d3c049",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:32.75332468",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983378699743232\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035533\"}"
+  }, {
+    "id" : "a7ec5ec2-7f2a-4e69-822d-6babbd1e2c16",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:43.75343438",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983424052752384\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035544\"}"
+  }, {
+    "id" : "6ece876b-2216-49ef-a6af-38bb2d1698eb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:43.75343495",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983424212135936\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035544\"}"
+  }, {
+    "id" : "6f4c5ed2-e25d-4387-9ac0-292d969aea1e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:53.75353061",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588983464506814464\n{\"sid\":\"20032\",\"time\":\"20221106035554\"}"
+  }, {
+    "id" : "6f1d1757-6c99-43b9-9a12-8467a7654cc8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:53.75353474",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983466411028480\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035554\"}"
+  }, {
+    "id" : "50f09681-57f8-4c86-933d-25152b2f7019",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:55:53.75353524",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983466893373440\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035554\"}"
+  }, {
+    "id" : "fb561a53-e533-4c12-9bca-c3512d6de725",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:04.75364326",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983512166690816\n{\"sid\":\"20027\",\"port\":1,\"time\":\"20221106035605\"}"
+  }, {
+    "id" : "9653bb8b-1d59-4400-bd75-346cc6db1c51",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:04.75364385",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983512212828160\n{\"sid\":\"20026\",\"port\":1,\"time\":\"20221106035605\"}"
+  }, {
+    "id" : "42ad6915-4b5d-4c3f-8fa7-126c21dc3e72",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:14.75374566",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983554503995392\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035615\"}"
+  }, {
+    "id" : "f3e971d6-78d3-4f53-add8-1fbfa4443de4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:14.75374621",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983554780819456\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035615\"}"
+  }, {
+    "id" : "1d74f4e3-a2c0-42a8-a30a-75e1da9dbb4c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:19.75379686",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0\n{online:false}"
+  }, {
+    "id" : "91b7d201-eda3-4f19-8410-e49101e05d40",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391079",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0 1588983624536289280\n{online:true}"
+  }, {
+    "id" : "664951cb-0576-4148-a7c9-33562a110c7a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391772",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportErrorRecovery v1.0 1588983627371638784\n{\"port\":1,\"time\":\"20221106035632\"}"
+  }, {
+    "id" : "9c66bc7c-fd56-44d1-a237-afcf5fbd6a1c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391827",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportPlugStatus v1.0 1588983627409387520\n{\"sid\":\"20033\",\"port\":1,\"time\":\"20221106035632\",\"connected\":false}"
+  }, {
+    "id" : "aadce17c-9acc-4deb-9aa1-aab79a0102a8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391827",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983627455524864\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035633\"}"
+  }, {
+    "id" : "b2d8910a-f307-446b-906a-8a125c7dd2ce",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391828",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportSystemInfo v1.0 1588983627489079296\n{\"ammeter\":0.07,\"capabilities\":{\"currentType\":\"ac\",\"maxCurrent\":32.0,\"phases\":1,\"ports\":1,\"screen\":\"9.7\"},\"setting\":{\"content\":{},\"cpErrorRange\":0,\"defaultLightColor\":\"#00ff00\",\"earthDisabled\":true,\"intervalCancelCharge\":90,\"intervalChargeReport\":60,\"intervalStandby\":90,\"intervalStartDelayFee\":1800,\"ports\":{\"1\":{\"enabled\":true,\"lockEnabled\":false,\"powerPhase\":1,\"powerSupply\":20.0,\"powerSupplyPercent\":100}},\"powerFactor\":1.0,\"radar\":{\"enabled\":false},\"vErrorRange\":15},\"version\":\"firmware:v1.1.1807.1;app:v2.2.10.23\",\"time\":\"20221106035632\"}"
+  }, {
+    "id" : "b744ae7e-7b38-4af6-b551-c19950756a29",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391828",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983627526828032\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035633\"}"
+  }, {
+    "id" : "1ac0c5cb-5fc9-4d29-806e-1f491e85d400",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:31.75391828",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588983627556188160\n{\"sid\":\"20036\",\"time\":\"20221106035633\"}"
+  }, {
+    "id" : "4203e5b5-e8b0-401b-8af1-bb2d917e5a3f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:42.75402214",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983671151783936\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035643\"}"
+  }, {
+    "id" : "e1f4f66d-8130-42fa-88cd-81cfe1d12d95",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:42.75402308",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983671466356736\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035643\"}"
+  }, {
+    "id" : "f1701f0c-0b59-4464-8f07-c40201f6aca2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:52.75412252",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588983713002549248\n{\"sid\":\"20036\",\"time\":\"20221106035653\"}"
+  }, {
+    "id" : "007b9784-1e4c-4383-bab9-2cc1d7cc4f9a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:52.75412455",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983713816244224\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035653\"}"
+  }, {
+    "id" : "4fe4d81a-5fd8-48f3-ac8d-a4baa368038d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:56:52.75412503",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983713967239168\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035653\"}"
+  }, {
+    "id" : "d95ceba1-c64e-4f70-8cc3-c946129e46ad",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:03.75423311",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983759458660352\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035704\"}"
+  }, {
+    "id" : "d0aa46af-557f-40a7-af6a-5285a13e864c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:03.75423362",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983759672569856\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035704\"}"
+  }, {
+    "id" : "a18eccd3-9ad9-40e9-83cc-e6005d43645b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:13.75433755",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983802739683328\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035715\"}"
+  }, {
+    "id" : "c28536bb-c33e-4643-9415-f2a6ddb0e306",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:13.75433805",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983802949398528\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035715\"}"
+  }, {
+    "id" : "2fa35fea-9205-4167-b835-fe75b7587db7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:22.75442357",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588983839284654080\n{\"sid\":\"20036\",\"time\":\"20221106035723\"}"
+  }, {
+    "id" : "e742fc92-6a42-4924-90a8-83a5e15dae06",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:23.75443585",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983844728860672\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035725\"}"
+  }, {
+    "id" : "76a4ba1c-0353-43ef-9708-280575b30c81",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:23.75443643",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983845014073344\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035725\"}"
+  }, {
+    "id" : "cbaee606-86d9-44eb-959c-6cfd1705b2b4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:34.75454644",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983890350305280\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035735\"}"
+  }, {
+    "id" : "79e22956-d148-496d-8a39-85b5bac02dca",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:34.75454848",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983890560020480\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035736\"}"
+  }, {
+    "id" : "6adde66c-155b-48ac-9bd0-d8e074a7a3bf",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:44.75464682",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983932624695296\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035746\"}"
+  }, {
+    "id" : "8d6949ad-6ceb-41c6-89aa-d2bbfb1fbb6c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:44.75464734",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983932897325056\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035746\"}"
+  }, {
+    "id" : "e03b11a9-39d4-47bd-8983-91dfe6226f93",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:54.75474714",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983975100411904\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035756\"}"
+  }, {
+    "id" : "f15299bf-acd9-4bf4-bdea-776e2884876c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:57:55.75475741",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588983978879479808\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035757\"}"
+  }, {
+    "id" : "0b5ccddb-d090-49a2-adfa-fb5722c0dca1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:02.75482476",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588984007841148928\n{\"sid\":\"20036\",\"time\":\"20221106035804\"}"
+  }, {
+    "id" : "7a60e04b-8da9-44c2-9524-ffd58635cfae",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:05.75485773",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984021183229952\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035807\"}"
+  }, {
+    "id" : "085112ea-6afe-45d7-9d45-b736e8e9894e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:05.75485857",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984021606854656\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035807\"}"
+  }, {
+    "id" : "34cd5270-de4a-4d70-bbf1-77a432ba0fcb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:15.75495810",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984063596032000\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035817\"}"
+  }, {
+    "id" : "05f546e6-1bb1-49fa-86ad-34e65768479a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:15.75495861",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984063751221248\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035817\"}"
+  }, {
+    "id" : "dc167186-1c65-4409-9a86-a0330ecf8970",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:26.75506844",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984109750153216\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035828\"}"
+  }, {
+    "id" : "be6550fa-45fb-4def-8eb1-8463e9411757",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:26.75506887",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984109922119680\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035828\"}"
+  }, {
+    "id" : "87bd0b30-e93e-4c49-a7c4-37b54fd3ac71",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:36.75516882",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984152188121088\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035838\"}"
+  }, {
+    "id" : "9d08249a-77ce-4d6c-bc5b-711c995433ec",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:36.75516941",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984152452362240\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035838\"}"
+  }, {
+    "id" : "c7593d12-8f05-48b7-ad10-1d7aaace4d06",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:48.75528167",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984198530985984\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035849\"}"
+  }, {
+    "id" : "bee39fc8-4eec-4c87-b75e-25a9e0d4dc93",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:48.75528226",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984199424372736\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035849\"}"
+  }, {
+    "id" : "57a2c428-dda6-4899-95ee-9fcc9b10c4d5",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:52.75532889",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588984218458124288\n{\"sid\":\"20036\",\"time\":\"20221106035854\"}"
+  }, {
+    "id" : "cb9b28b3-072e-4179-bf12-3be7509d486c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:58.75538353",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984241887506432\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035859\"}"
+  }, {
+    "id" : "350c64b8-c728-47d6-857c-a02294fe7406",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:58:58.75538395",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984242134970368\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035859\"}"
+  }, {
+    "id" : "33132d2f-cfb5-4ba2-877a-ddd32f4223f3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:09.75549060",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984286879805440\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035910\"}"
+  }, {
+    "id" : "f84056b3-0f3e-4d1a-9444-5769f2171f82",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:09.75549263",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984287722860544\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035910\"}"
+  }, {
+    "id" : "c99a7144-ef3e-42c7-9221-8964bbbe190d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:19.75559298",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984329804312576\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035920\"}"
+  }, {
+    "id" : "2bf0e118-6dc0-4fc0-9862-a745cd29c9e3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:19.75559394",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984330504761344\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035920\"}"
+  }, {
+    "id" : "124571b4-5a66-483f-91b4-723198fd0092",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:30.75570357",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984375870353408\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035931\"}"
+  }, {
+    "id" : "4406841a-2200-4046-a921-0b7187e2142c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:30.75570404",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984376247840768\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035931\"}"
+  }, {
+    "id" : "de34e92d-2251-4584-aa80-d791593fb4d8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:40.75580393",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984418383818752\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106035941\"}"
+  }, {
+    "id" : "9155ca66-c5a9-4d72-8324-65ce3288f985",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:40.75580452",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984418723557376\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106035941\"}"
+  }, {
+    "id" : "14bca734-746d-4975-9921-b9bf735274af",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:51.75591454",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984464089149440\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106035952\"}"
+  }, {
+    "id" : "3a7f62bc-431f-4ced-bcc1-5132fda56ea4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:51.75591503",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984464445665280\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106035952\"}"
+  }, {
+    "id" : "5c35ae0d-30e4-482b-87be-9a074cf0cb1e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  20:59:53.75593089",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588984471248826368\n{\"sid\":\"20036\",\"time\":\"20221106035954\"}"
+  }, {
+    "id" : "a1eba41f-78aa-4fe8-9287-1341fa06c1fb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:01.75601488",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984506946547712\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040002\"}"
+  }, {
+    "id" : "8f3b0c99-018a-461f-a5da-c856cf0c4e60",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:01.75601549",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984507240148992\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040003\"}"
+  }, {
+    "id" : "8d4c111a-59d2-4168-8041-efcdb4498ea0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:12.75612361",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984552656072704\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106040013\"}"
+  }, {
+    "id" : "713e6585-4b4f-4cc3-a1fb-64037802b3bb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:12.75612451",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984553025171456\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106040013\"}"
+  }, {
+    "id" : "01ae78ef-b259-4413-9ba3-13dc4c345712",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:22.75622733",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984595513470976\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040024\"}"
+  }, {
+    "id" : "57b06280-a77d-4c91-b992-60cfbdde6232",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:22.75622809",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984595605745664\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040024\"}"
+  }, {
+    "id" : "1dab540d-aae1-4219-957b-ca3ce5cfcad7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:33.75633641",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984641722118144\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106040034\"}"
+  }, {
+    "id" : "3f479fdc-bfe8-4fa6-bbda-3e38708aaf1e",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:33.75633690",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984642078633984\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106040035\"}"
+  }, {
+    "id" : "899d5d03-e903-46fd-ba5a-9caf41ff97e5",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:43.75643776",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984684306886656\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040045\"}"
+  }, {
+    "id" : "91d09276-a4ae-4120-beca-ce6a43688eaf",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:43.75643831",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984684596293632\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040045\"}"
+  }, {
+    "id" : "4391ac38-bceb-4bc3-9a91-c8f63858f6bb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:54.75654735",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984729727004672\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106040056\"}"
+  }, {
+    "id" : "3d5f636a-f515-44da-9295-9f35ca434950",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:00:54.75654837",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984730238709760\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106040056\"}"
+  }, {
+    "id" : "b896f5b1-f119-45e0-b225-bc476d3fdfbc",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:03.75663339",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588984766297141248\n{\"sid\":\"20036\",\"time\":\"20221106040104\"}"
+  }, {
+    "id" : "0731211e-f0e6-4632-a42b-fcb1a6d1dd56",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:04.75664780",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984772047532032\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040106\"}"
+  }, {
+    "id" : "585baae2-392a-4e43-94c1-718d178c75fa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:04.75664828",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984772374687744\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040106\"}"
+  }, {
+    "id" : "fa2da0e8-9ddd-43d1-bf91-f4973cca49b0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:15.75675831",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984818310705152\n{\"sid\":\"20030\",\"port\":1,\"time\":\"20221106040117\"}"
+  }, {
+    "id" : "bc9ecd70-1b51-40ea-a77e-b343c93be88d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:15.75675888",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984819015348224\n{\"sid\":\"20031\",\"port\":1,\"time\":\"20221106040117\"}"
+  }, {
+    "id" : "f26a3196-8ee7-453f-bb9f-58bd42db6167",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:25.75685868",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984860677369856\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040127\"}"
+  }, {
+    "id" : "90bd977a-7967-40b0-b57d-9449af656c3d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:25.75685915",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984860966776832\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040127\"}"
+  }, {
+    "id" : "75ceb57b-18b3-429f-ac98-4731760b98c2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:29.75689963",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0\n{online:false}"
+  }, {
+    "id" : "cfbe0809-6279-4a1f-b84d-c9ffa1c88521",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:41.75701637",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0 1588984926150455296\n{online:true}"
+  }, {
+    "id" : "4ae08eb9-1c5c-4c41-975c-43a29c854502",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702047",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportErrorRecovery v1.0 1588984928620900352\n{\"port\":1,\"time\":\"20221106040143\"}"
+  }, {
+    "id" : "f79725a1-9721-4c73-9890-745c4e5f4bad",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702099",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportPlugStatus v1.0 1588984928650260480\n{\"sid\":\"20037\",\"port\":1,\"time\":\"20221106040143\",\"connected\":false}"
+  }, {
+    "id" : "866fd7a8-83f3-4092-9858-8b5c1ee0e1fb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702099",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportSystemInfo v1.0 1588984928759312384\n{\"ammeter\":0.07,\"capabilities\":{\"currentType\":\"ac\",\"maxCurrent\":32.0,\"phases\":1,\"ports\":1,\"screen\":\"9.7\"},\"setting\":{\"content\":{},\"cpErrorRange\":0,\"defaultLightColor\":\"#00ff00\",\"earthDisabled\":true,\"intervalCancelCharge\":90,\"intervalChargeReport\":60,\"intervalStandby\":90,\"intervalStartDelayFee\":1800,\"ports\":{\"1\":{\"enabled\":true,\"lockEnabled\":false,\"powerPhase\":1,\"powerSupply\":20.0,\"powerSupplyPercent\":100}},\"powerFactor\":1.0,\"radar\":{\"enabled\":false},\"vErrorRange\":15},\"version\":\"firmware:v1.1.1807.1;app:v2.2.10.23\",\"time\":\"20221106040143\"}"
+  }, {
+    "id" : "1ca6c81e-8300-42a9-aaa1-52e030eea47f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702099",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588984928788672512\n{\"sid\":\"20038\",\"time\":\"20221106040143\"}"
+  }, {
+    "id" : "761d091d-c5a0-4be4-84c1-94a2ca211632",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702341",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984930067935232\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040143\"}"
+  }, {
+    "id" : "69d2b1b0-bce4-4f97-a09f-45c1112897b3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:42.75702392",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984930093101056\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040143\"}"
+  }, {
+    "id" : "57e89d81-d239-4abd-acac-d4c5fb23498f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:52.75712696",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984972786921472\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040154\"}"
+  }, {
+    "id" : "eab745d5-4a4d-49b8-8be1-5489eea6293f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:01:52.75712747",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588984973210546176\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040154\"}"
+  }, {
+    "id" : "cd3388f7-d0e0-4573-8871-3b33fe65bb04",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:02.75722730",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588985014675435520\n{\"sid\":\"20038\",\"time\":\"20221106040204\"}"
+  }, {
+    "id" : "a72ac59b-e7ed-40fe-8965-df0d8ff557dd",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:02.75722775",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985015501713408\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040204\"}"
+  }, {
+    "id" : "7cc59c65-27e8-452d-9229-62892b16c891",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:02.75722821",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985015782731776\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040204\"}"
+  }, {
+    "id" : "dbef6938-575a-44ec-93bb-bf579113d834",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:12.75732969",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985057868378112\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040214\"}"
+  }, {
+    "id" : "d3627968-5f0a-4999-a706-7f113fe64940",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:13.75733023",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985058501718016\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040214\"}"
+  }, {
+    "id" : "379f4fa8-7312-459d-a6af-e2142ca617e3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:23.75743881",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985104286740480\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040225\"}"
+  }, {
+    "id" : "f31c8615-676b-4266-988f-b3febfc0f2e3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:23.75743978",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985104693587968\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040225\"}"
+  }, {
+    "id" : "c4e1522f-fe05-47da-8e68-385940470ce2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:32.75752838",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588985141607657472\n{\"sid\":\"20038\",\"time\":\"20221106040234\"}"
+  }, {
+    "id" : "bd1152e3-3b39-4e4b-89c5-827ccb8dd596",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:34.75754102",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985147139944448\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040235\"}"
+  }, {
+    "id" : "c19fed9a-8a61-4723-a458-5fea7dd45f57",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:34.75754166",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985147370631168\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040235\"}"
+  }, {
+    "id" : "a87d510d-1ea0-4bd2-8813-381d6b56e7af",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:44.75764952",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985192656531456\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040246\"}"
+  }, {
+    "id" : "2b8777e9-b0ef-40e0-a7e1-9014b0927220",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:45.75765123",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985193214373888\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040246\"}"
+  }, {
+    "id" : "cb733d6a-fa53-4e7e-8e1b-25dd9280143f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:55.75775158",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985235228717056\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040256\"}"
+  }, {
+    "id" : "3d8f97da-fcb9-4cc5-8181-04dfc11e9027",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:02:55.75775354",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985235572649984\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040256\"}"
+  }, {
+    "id" : "f836a527-80ef-4e9c-b9f6-4e0a1ce3252d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:06.75786147",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985281277980672\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040307\"}"
+  }, {
+    "id" : "6c4b9607-9904-4566-a4f0-e7fb0230a1e2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:06.75786197",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985281777102848\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040307\"}"
+  }, {
+    "id" : "d4cf8e83-0d03-42ae-9bea-d517239b601d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:13.75793015",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588985310092849152\n{\"sid\":\"20038\",\"time\":\"20221106040314\"}"
+  }, {
+    "id" : "d138ee84-3e92-441e-bbfd-39bddbef4280",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:16.75796254",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985323850166272\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040317\"}"
+  }, {
+    "id" : "91c9efcf-2f4b-4661-ae3b-558b33a43762",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:16.75796320",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985324076658688\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040317\"}"
+  }, {
+    "id" : "7b12b21e-263b-4755-9e62-6bcc963a5f13",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:27.75807248",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985370008481792\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040328\"}"
+  }, {
+    "id" : "236337a8-60ea-4657-8912-d8ec53b2af87",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:27.75807297",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985370264334336\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040328\"}"
+  }, {
+    "id" : "e8e01ce0-f430-45da-88fa-8dac9d9425aa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:37.75817347",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985411934744576\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040338\"}"
+  }, {
+    "id" : "a55ce365-90d6-4410-a286-d7d6f10c17d8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:37.75817396",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985412224151552\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040338\"}"
+  }, {
+    "id" : "3f01bfef-5be0-42d1-b338-beef5041c190",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:48.75828408",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985458214694912\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040349\"}"
+  }, {
+    "id" : "c183a4ef-d294-4d21-8e04-834a8c950851",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:48.75828455",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985458713817088\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040349\"}"
+  }, {
+    "id" : "605c5bec-d581-4c9a-9407-d4f559fb1d70",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:58.75838444",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985500719771648\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040359\"}"
+  }, {
+    "id" : "918e54df-2c99-42e6-9b5d-e61543e6a116",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:03:58.75838497",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985501017567232\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040359\"}"
+  }, {
+    "id" : "837ac2cb-9569-4475-9ee9-b65484f61356",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:03.75843152",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588985520521080832\n{\"sid\":\"20038\",\"time\":\"20221106040404\"}"
+  }, {
+    "id" : "ff553497-cf65-4303-85a9-b4bac41f56f6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:09.75849504",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985546706120704\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040410\"}"
+  }, {
+    "id" : "0f7d2db1-8e5a-4869-8dba-f7137e1d8096",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:09.75849583",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985547624673280\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040411\"}"
+  }, {
+    "id" : "79dd171f-e41b-40a6-95fc-0478747f0eb2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:19.75859538",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985589139894272\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040421\"}"
+  }, {
+    "id" : "47cd6aab-710c-4a2b-97b4-91bd88102f3a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:19.75859585",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985589374775296\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040421\"}"
+  }, {
+    "id" : "48a1a47a-07f1-4e08-9b83-69ddf6529388",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:30.75870596",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985635210129408\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040431\"}"
+  }, {
+    "id" : "e4ddbfb3-d8a8-4357-85c2-fdf402de5546",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:30.75870646",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985635977687040\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040432\"}"
+  }, {
+    "id" : "94c49d94-4cb5-4b28-b31f-7e012bb6d481",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:40.75880846",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985678264659968\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040442\"}"
+  }, {
+    "id" : "a1bb7ca9-d566-4b32-b719-afbc20e7fc6a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:40.75880914",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985678994468864\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040442\"}"
+  }, {
+    "id" : "2eb59f18-1620-454f-8478-b58649d20751",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:51.75891691",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985723865133056\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040453\"}"
+  }, {
+    "id" : "cd7a0f80-c869-48eb-a1e9-a5e16f175fba",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:04:51.75891737",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985724007739392\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040453\"}"
+  }, {
+    "id" : "8a553f04-1307-4cdd-b60b-730e752c20ac",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:01.75901909",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985766978383872\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040503\"}"
+  }, {
+    "id" : "f8a26ad1-6851-4828-b2e9-b2b45c96d64b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:02.75902137",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985767678832640\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040503\"}"
+  }, {
+    "id" : "a2d6e100-6e03-4f95-878b-b68f614e1e92",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:03.75903363",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588985773144010752\n{\"sid\":\"20038\",\"time\":\"20221106040504\"}"
+  }, {
+    "id" : "fc92e515-3af3-47cb-8d24-d8ce94ef9e53",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:12.75912783",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985812352364544\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040514\"}"
+  }, {
+    "id" : "71f5290c-78c5-4af2-b8cb-2440dddd2fa4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:12.75912835",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985812864069632\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040514\"}"
+  }, {
+    "id" : "018c8857-8cf1-46c0-aecf-32d398c966d1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:22.75922871",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985854857441280\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040524\"}"
+  }, {
+    "id" : "844d6980-bdff-4c38-90b7-b63d31cc8088",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:22.75922920",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985855138459648\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040524\"}"
+  }, {
+    "id" : "cb435dd5-8192-4cfd-b9a8-1b895a30455b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:33.75933877",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985901074477056\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040535\"}"
+  }, {
+    "id" : "a328abb6-5ceb-4a2a-bd04-2ec539cd9738",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:33.75933973",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985901565210624\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040535\"}"
+  }, {
+    "id" : "d73f1043-8430-46e7-b82a-179dc3f6b1b1",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:44.75944071",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985943495667712\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040545\"}"
+  }, {
+    "id" : "f2f971ca-1442-47d1-8883-ee81bcc6797a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:44.75944138",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985944204505088\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040545\"}"
+  }, {
+    "id" : "82028aea-0812-4978-92ca-4c3401e178b6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:55.75955001",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985989687537664\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040556\"}"
+  }, {
+    "id" : "cffd8b89-5bd3-4118-8b1d-718ee4b3c307",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:05:55.75955386",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588985990551564288\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040556\"}"
+  }, {
+    "id" : "6e788007-75f0-4658-8c38-f422aba349aa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:05.75965281",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986032553324544\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040606\"}"
+  }, {
+    "id" : "17f29adb-a95d-405a-a785-2a57029aa4d6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:05.75965383",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986033245384704\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040606\"}"
+  }, {
+    "id" : "dd4dab0f-ba08-40dd-a9e1-d7d87a2e1595",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:13.75973813",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986068334931968\n{\"sid\":\"20038\",\"time\":\"20221106040615\"}"
+  }, {
+    "id" : "6da9750a-cc88-4f12-acf0-bbf53e5c7544",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:16.75976278",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986078682279936\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040617\"}"
+  }, {
+    "id" : "5ebd714e-9231-4d3e-9357-87608d08b4df",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:16.75976475",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986078896189440\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040617\"}"
+  }, {
+    "id" : "23835533-a82e-41d7-9761-090c9f897034",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:26.75986315",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986120759537664\n{\"sid\":\"20035\",\"port\":1,\"time\":\"20221106040627\"}"
+  }, {
+    "id" : "97a1ede5-0bf8-471a-a318-cc42a9ad57e6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:26.75986367",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986120994418688\n{\"sid\":\"20034\",\"port\":1,\"time\":\"20221106040627\"}"
+  }, {
+    "id" : "3285c9e4-803c-4b4f-af8f-7a536358195d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:37.75997369",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986167060459520\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040638\"}"
+  }, {
+    "id" : "f4988abc-16df-4adf-9e30-a0ed01622e07",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:37.75997428",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986167454724096\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040638\"}"
+  }, {
+    "id" : "c9d44e3e-84b8-402b-b5d4-ac4931a561c2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:40.76000642",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0\n{online:false}"
+  }, {
+    "id" : "bdbe0cfd-c2cb-44e7-b30c-9f7a1f1ca45b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:51.76011928",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportNetworkStatus v1.0 1588986228540567552\n{online:true}"
+  }, {
+    "id" : "d6d5a568-d298-4c4e-aae8-c7e996a371fa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012318",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportErrorRecovery v1.0 1588986229949853696\n{\"port\":1,\"time\":\"20221106040653\"}"
+  }, {
+    "id" : "e4e71407-95e0-4fc1-9cc9-748196a990b0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012367",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportPlugStatus v1.0 1588986229983408128\n{\"sid\":\"20041\",\"port\":1,\"time\":\"20221106040653\",\"connected\":false}"
+  }, {
+    "id" : "2ed8d0f6-e609-4e8e-9fd5-89cd315be587",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012367",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "ReportSystemInfo v1.0 1588986230016962560\n{\"ammeter\":0.07,\"capabilities\":{\"currentType\":\"ac\",\"maxCurrent\":32.0,\"phases\":1,\"ports\":1,\"screen\":\"9.7\"},\"setting\":{\"content\":{},\"cpErrorRange\":0,\"defaultLightColor\":\"#00ff00\",\"earthDisabled\":true,\"intervalCancelCharge\":90,\"intervalChargeReport\":60,\"intervalStandby\":90,\"intervalStartDelayFee\":1800,\"ports\":{\"1\":{\"enabled\":true,\"lockEnabled\":false,\"powerPhase\":1,\"powerSupply\":20.0,\"powerSupplyPercent\":100}},\"powerFactor\":1.0,\"radar\":{\"enabled\":false},\"vErrorRange\":15},\"version\":\"firmware:v1.1.1807.1;app:v2.2.10.23\",\"time\":\"20221106040653\"}"
+  }, {
+    "id" : "655e4016-180a-4995-9391-fa8037571331",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012367",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986230046322688\n{\"sid\":\"20042\",\"time\":\"20221106040653\"}"
+  }, {
+    "id" : "4c55f42d-a740-4501-b438-136146ec2634",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012725",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986231136841728\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040654\"}"
+  }, {
+    "id" : "3786ce06-68e4-4a93-aa4f-ea28d64d614d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:06:52.76012773",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986231254282240\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040654\"}"
+  }, {
+    "id" : "c97836e8-969e-4df8-813b-52a2b78ff6cd",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:03.76023049",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986275189616640\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040704\"}"
+  }, {
+    "id" : "b458f45e-2910-40c6-bffc-37509544bbfb",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:03.76023238",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986275621629952\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040704\"}"
+  }, {
+    "id" : "e24d0640-8205-471a-922b-47ce0329eee9",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:13.76033207",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986316985856000\n{\"sid\":\"20042\",\"time\":\"20221106040714\"}"
+  }, {
+    "id" : "4837c663-9080-4019-bf7c-34afdba5cdaa",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:13.76033256",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986317782773760\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040714\"}"
+  }, {
+    "id" : "a25e9737-1de1-495a-9cf0-6d5eccba7ddc",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:13.76033257",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986317929574400\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040714\"}"
+  }, {
+    "id" : "0a5ce40b-ce84-4489-8a45-523377edb541",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:23.76043215",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986359767756800\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040724\"}"
+  }, {
+    "id" : "ebf1749d-b6f6-40db-b96c-3a9dae10e977",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:24.76044265",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986363920117760\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040725\"}"
+  }, {
+    "id" : "060d91e8-be55-4178-80a8-080fcea6d1bf",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:34.76054509",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986406538440704\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040735\"}"
+  }, {
+    "id" : "d48f2c41-67e4-4dc7-a7fc-00b3e48b399b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:34.76054558",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986407326969856\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040735\"}"
+  }, {
+    "id" : "e49a3211-19d7-4729-9cbf-a02739d03e96",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:43.76063312",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986443792248832\n{\"sid\":\"20042\",\"time\":\"20221106040744\"}"
+  }, {
+    "id" : "064d116f-ed14-4f0f-a6f9-2e61739606c7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:44.76064813",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986450322780160\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040746\"}"
+  }, {
+    "id" : "284fd076-5702-4236-9e49-0583ab2972c7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:44.76064954",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986450591215616\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040746\"}"
+  }, {
+    "id" : "683662e3-f1b2-479b-b9c5-b39f2cb26a0b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:55.76075600",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986494904037376\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040756\"}"
+  }, {
+    "id" : "414b4178-a707-4f65-9912-4b1aa9653983",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:07:55.76075707",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986495382188032\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040756\"}"
+  }, {
+    "id" : "6de156d9-35a1-46bc-b3a2-ee461aa38c13",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:05.76085754",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986538147311616\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040807\"}"
+  }, {
+    "id" : "2a6385a4-30cf-413b-9aa6-9ff51e7c6809",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:05.76085842",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986538533187584\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040807\"}"
+  }, {
+    "id" : "35e78a7d-cfcd-4d62-a9b4-9af9bc86e01d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:16.76096695",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986583689064448\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040818\"}"
+  }, {
+    "id" : "4183e1ca-5b05-4f87-a9ac-cb0528e072db",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:16.76096788",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986584431456256\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040818\"}"
+  }, {
+    "id" : "4fc0468d-c2ec-48b1-bc7d-d769bdb1fd1c",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:23.76103457",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986612315189248\n{\"sid\":\"20042\",\"time\":\"20221106040824\"}"
+  }, {
+    "id" : "ea9c790c-8e81-47b5-a010-a865d88bb12f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:27.76107139",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986626978476032\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040828\"}"
+  }, {
+    "id" : "0992fb15-5f61-47f7-9942-2fbda0fd303d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:27.76107188",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986627301437440\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040828\"}"
+  }, {
+    "id" : "c1cfbc89-a307-4efd-bc57-efb4840b2471",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:37.76117798",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986672377622528\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040839\"}"
+  }, {
+    "id" : "dd02114a-8a6b-406e-9217-89dff87660f2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:37.76117844",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986672620892160\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040839\"}"
+  }, {
+    "id" : "9ba8ad0f-de3f-4d3c-9e56-60da2e7097e4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:47.76127824",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986714333245440\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040849\"}"
+  }, {
+    "id" : "7028b257-c84f-4086-a68e-fd96bfd9682b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:47.76127876",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986714631041024\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040849\"}"
+  }, {
+    "id" : "c0d5aa23-063e-4ad0-8342-beddf5bb4cbe",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:58.76138884",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986760491560960\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040900\"}"
+  }, {
+    "id" : "b64a40cf-76f6-49a7-a823-1bf65f21c3b8",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:08:58.76138943",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986760818716672\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040900\"}"
+  }, {
+    "id" : "69d08def-052c-4bc8-8dfa-28bfa15d4047",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:09.76149122",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986803139244032\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040910\"}"
+  }, {
+    "id" : "59795a24-2d95-435f-8c48-6987daafd882",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:09.76149179",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986803420262400\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040910\"}"
+  }, {
+    "id" : "54ab1493-2298-4857-a234-e6a3c4305c4a",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:13.76153659",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588986822986690560\n{\"sid\":\"20042\",\"time\":\"20221106040915\"}"
+  }, {
+    "id" : "46635a1a-462b-424b-add5-ad894c32e69d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:19.76159978",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986849276588032\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040921\"}"
+  }, {
+    "id" : "521f9d16-cc5c-43c3-a148-b6c02a64fad7",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:20.76160179",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986850224500736\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040921\"}"
+  }, {
+    "id" : "a846217a-ad45-4b01-ad9b-486dfe181ad0",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:30.76170430",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986892746354688\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040931\"}"
+  }, {
+    "id" : "8666a26f-90f9-43f9-bb8b-f7aa7f9c6924",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:30.76170478",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986893018984448\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040931\"}"
+  }, {
+    "id" : "c3e8ce45-edc6-4e23-833b-13b3a81ff569",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:41.76181481",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986938309079040\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106040942\"}"
+  }, {
+    "id" : "14a707f1-ec41-4c33-8edd-7f0aaa18d45b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:41.76181488",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986938590097408\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106040942\"}"
+  }, {
+    "id" : "10817ff4-5990-4af5-9276-9065b22a9e99",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:51.76191369",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986981107757056\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106040952\"}"
+  }, {
+    "id" : "02432672-263f-4aae-8f4c-794a18190717",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:09:51.76191439",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588986981439107072\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106040952\"}"
+  }, {
+    "id" : "ca1c4338-3c4d-46cb-84c6-7305652161f6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:02.76202311",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987027035385856\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106041003\"}"
+  }, {
+    "id" : "7d6d5aa2-3257-46a9-8109-1f00214807e3",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:02.76202576",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987027886829568\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106041004\"}"
+  }, {
+    "id" : "2db2d646-181d-4278-8a4b-dd0a0afda386",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:12.76212482",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987069590794240\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106041013\"}"
+  }, {
+    "id" : "1b66ddc0-f11d-4868-bf7d-9a7dcad5e77b",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:12.76212554",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987070014418944\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106041014\"}"
+  }, {
+    "id" : "0162ce3d-c8c6-4ef3-8456-925c1c208a9f",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:14.76214049",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestSetting v1.0 1588987075764809728\n{\"sid\":\"20042\",\"time\":\"20221106041015\"}"
+  }, {
+    "id" : "52e0d3c2-a73a-4fea-8d99-3bf7af765e89",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:23.76223334",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987115237404672\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106041024\"}"
+  }, {
+    "id" : "013973a1-20f0-41ae-ab08-6334487e581d",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:23.76223673",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987115954630656\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106041025\"}"
+  }, {
+    "id" : "298eb56f-fbc4-4a68-98cd-1a7cc75ef117",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:33.76233504",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987157662789632\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106041034\"}"
+  }, {
+    "id" : "46dcbaf3-98b2-4c45-a074-c39b4dc8bc32",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:33.76233571",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987157956390912\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106041035\"}"
+  }, {
+    "id" : "8739016c-3aa6-4f04-9246-a00d9f5290a6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:44.76244456",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987203615584256\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106041045\"}"
+  }, {
+    "id" : "860f9b36-bb83-4b02-9ac7-329f9a9cbee4",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:44.76244525",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987204102123520\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106041045\"}"
+  }, {
+    "id" : "2d5deb07-2eda-484f-a981-d8e6fbaa6440",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:54.76254608",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987246284238848\n{\"sid\":\"20040\",\"port\":1,\"time\":\"20221106041056\"}"
+  }, {
+    "id" : "71265f0b-0e0c-4346-901d-d4b5937a8ad2",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:10:54.76254672",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987246674309120\n{\"sid\":\"20039\",\"port\":1,\"time\":\"20221106041056\"}"
+  }, {
+    "id" : "be2a2adc-372b-44df-963a-07daa53ee5b6",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:11:05.76265670",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987292224450560\n{\"sid\":\"20043\",\"port\":1,\"time\":\"20221106041107\"}"
+  }, {
+    "id" : "81afa503-4135-4d6b-a772-6f92ae0c2494",
+    "topic" : "test/up",
+    "received" : "05-11-2022  21:11:05.76265712",
+    "qos" : 0,
+    "retained" : false,
+    "duplicate" : false,
+    "payload" : "RequestChargeQRCode v1.0 1588987292266393600\n{\"sid\":\"20044\",\"port\":1,\"time\":\"20221106041107\"}"
+  } ]
+}

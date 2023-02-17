@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="44px" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge_cost_text"/>
+        <LinearLayout android:gravity="bottom" android:id="@+id/ll_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+            <TextView android:textSize="100px" android:textColor="@color/white" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.00"/>
+            <TextView android:textSize="30px" android:textColor="@color/white" android:id="@+id/tv_fee_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="10px"/>
+            <TextView android:textSize="24px" android:textColor="@color/white" android:id="@+id/tv_free" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:text="@string/home_cur_electrovalence_free"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140px" android:layout_marginTop="30px" android:layout_marginRight="140px">
+            <View android:background="#60ffffff" android:layout_width="1px" android:layout_height="100px" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:layout_centerInParent="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="30px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_delay_time"/>
+                <TextView android:textSize="48px" android:textColor="@color/white" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="30px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_power"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                    <TextView android:textSize="48px" android:textColor="@color/white" android:id="@+id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="28px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_kw"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_one_text"/>
+</FrameLayout>

@@ -1,0 +1,5 @@
+su
+mv /system/app/xcharger.apk.tmp /system/app/xcharger.apk
+reboot
+exit
+exit

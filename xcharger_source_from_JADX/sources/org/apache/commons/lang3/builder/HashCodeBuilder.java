@@ -1,0 +1,307 @@
+package org.apache.commons.lang3.builder;
+
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.Validate;
+
+public class HashCodeBuilder implements Builder<Integer> {
+    private static final int DEFAULT_INITIAL_VALUE = 17;
+    private static final int DEFAULT_MULTIPLIER_VALUE = 37;
+    private static final ThreadLocal<Set<IDKey>> REGISTRY = new ThreadLocal<>();
+    private final int iConstant;
+    private int iTotal;
+
+    static Set<IDKey> getRegistry() {
+        return REGISTRY.get();
+    }
+
+    static boolean isRegistered(Object value) {
+        Set<IDKey> registry = getRegistry();
+        return registry != null && registry.contains(new IDKey(value));
+    }
+
+    private static void reflectionAppend(Object object, Class<?> clazz, HashCodeBuilder builder, boolean useTransients, String[] excludeFields) {
+        if (!isRegistered(object)) {
+            try {
+                register(object);
+                Field[] fields = clazz.getDeclaredFields();
+                AccessibleObject.setAccessible(fields, true);
+                for (Field field : fields) {
+                    if (!ArrayUtils.contains((Object[]) excludeFields, (Object) field.getName()) && field.getName().indexOf(36) == -1 && ((useTransients || !Modifier.isTransient(field.getModifiers())) && !Modifier.isStatic(field.getModifiers()))) {
+                        builder.append(field.get(object));
+                    }
+                }
+                unregister(object);
+            } catch (IllegalAccessException e) {
+                throw new InternalError("Unexpected IllegalAccessException");
+            } catch (Throwable th) {
+                unregister(object);
+                throw th;
+            }
+        }
+    }
+
+    public static int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, Object object) {
+        return reflectionHashCode(initialNonZeroOddNumber, multiplierNonZeroOddNumber, object, false, (Class) null, new String[0]);
+    }
+
+    public static int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, Object object, boolean testTransients) {
+        return reflectionHashCode(initialNonZeroOddNumber, multiplierNonZeroOddNumber, object, testTransients, (Class) null, new String[0]);
+    }
+
+    public static <T> int reflectionHashCode(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber, T object, boolean testTransients, Class<? super T> reflectUpToClass, String... excludeFields) {
+        if (object == null) {
+            throw new IllegalArgumentException("The object to build a hash code for must not be null");
+        }
+        HashCodeBuilder builder = new HashCodeBuilder(initialNonZeroOddNumber, multiplierNonZeroOddNumber);
+        Class cls = object.getClass();
+        reflectionAppend(object, cls, builder, testTransients, excludeFields);
+        while (cls.getSuperclass() != null && cls != reflectUpToClass) {
+            cls = cls.getSuperclass();
+            reflectionAppend(object, cls, builder, testTransients, excludeFields);
+        }
+        return builder.toHashCode();
+    }
+
+    public static int reflectionHashCode(Object object, boolean testTransients) {
+        return reflectionHashCode(17, DEFAULT_MULTIPLIER_VALUE, object, testTransients, (Class) null, new String[0]);
+    }
+
+    public static int reflectionHashCode(Object object, Collection<String> excludeFields) {
+        return reflectionHashCode(object, ReflectionToStringBuilder.toNoNullStringArray(excludeFields));
+    }
+
+    public static int reflectionHashCode(Object object, String... excludeFields) {
+        return reflectionHashCode(17, DEFAULT_MULTIPLIER_VALUE, object, false, (Class) null, excludeFields);
+    }
+
+    static void register(Object value) {
+        synchronized (HashCodeBuilder.class) {
+            if (getRegistry() == null) {
+                REGISTRY.set(new HashSet());
+            }
+        }
+        getRegistry().add(new IDKey(value));
+    }
+
+    static void unregister(Object value) {
+        Set<IDKey> registry = getRegistry();
+        if (registry != null) {
+            registry.remove(new IDKey(value));
+            synchronized (HashCodeBuilder.class) {
+                Set<IDKey> registry2 = getRegistry();
+                if (registry2 != null && registry2.isEmpty()) {
+                    REGISTRY.remove();
+                }
+            }
+        }
+    }
+
+    public HashCodeBuilder() {
+        this.iTotal = 0;
+        this.iConstant = DEFAULT_MULTIPLIER_VALUE;
+        this.iTotal = 17;
+    }
+
+    public HashCodeBuilder(int initialOddNumber, int multiplierOddNumber) {
+        boolean z;
+        boolean z2 = true;
+        this.iTotal = 0;
+        if (initialOddNumber % 2 != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        Validate.isTrue(z, "HashCodeBuilder requires an odd initial value", new Object[0]);
+        Validate.isTrue(multiplierOddNumber % 2 == 0 ? false : z2, "HashCodeBuilder requires an odd multiplier", new Object[0]);
+        this.iConstant = multiplierOddNumber;
+        this.iTotal = initialOddNumber;
+    }
+
+    public HashCodeBuilder append(boolean value) {
+        this.iTotal = (value ? 0 : 1) + (this.iConstant * this.iTotal);
+        return this;
+    }
+
+    public HashCodeBuilder append(boolean[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (boolean element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(byte value) {
+        this.iTotal = (this.iTotal * this.iConstant) + value;
+        return this;
+    }
+
+    public HashCodeBuilder append(byte[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (byte element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(char value) {
+        this.iTotal = (this.iTotal * this.iConstant) + value;
+        return this;
+    }
+
+    public HashCodeBuilder append(char[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (char element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(double value) {
+        return append(Double.doubleToLongBits(value));
+    }
+
+    public HashCodeBuilder append(double[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (double element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(float value) {
+        this.iTotal = (this.iTotal * this.iConstant) + Float.floatToIntBits(value);
+        return this;
+    }
+
+    public HashCodeBuilder append(float[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (float element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(int value) {
+        this.iTotal = (this.iTotal * this.iConstant) + value;
+        return this;
+    }
+
+    public HashCodeBuilder append(int[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (int element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(long value) {
+        this.iTotal = (this.iTotal * this.iConstant) + ((int) ((value >> 32) ^ value));
+        return this;
+    }
+
+    public HashCodeBuilder append(long[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (long element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(Object object) {
+        if (object == null) {
+            this.iTotal *= this.iConstant;
+        } else if (!object.getClass().isArray()) {
+            this.iTotal = (this.iTotal * this.iConstant) + object.hashCode();
+        } else if (object instanceof long[]) {
+            append((long[]) (long[]) object);
+        } else if (object instanceof int[]) {
+            append((int[]) (int[]) object);
+        } else if (object instanceof short[]) {
+            append((short[]) (short[]) object);
+        } else if (object instanceof char[]) {
+            append((char[]) (char[]) object);
+        } else if (object instanceof byte[]) {
+            append((byte[]) (byte[]) object);
+        } else if (object instanceof double[]) {
+            append((double[]) (double[]) object);
+        } else if (object instanceof float[]) {
+            append((float[]) (float[]) object);
+        } else if (object instanceof boolean[]) {
+            append((boolean[]) (boolean[]) object);
+        } else {
+            append((Object[]) (Object[]) object);
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(Object[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (Object element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder append(short value) {
+        this.iTotal = (this.iTotal * this.iConstant) + value;
+        return this;
+    }
+
+    public HashCodeBuilder append(short[] array) {
+        if (array == null) {
+            this.iTotal *= this.iConstant;
+        } else {
+            for (short element : array) {
+                append(element);
+            }
+        }
+        return this;
+    }
+
+    public HashCodeBuilder appendSuper(int superHashCode) {
+        this.iTotal = (this.iTotal * this.iConstant) + superHashCode;
+        return this;
+    }
+
+    public int toHashCode() {
+        return this.iTotal;
+    }
+
+    public Integer build() {
+        return Integer.valueOf(toHashCode());
+    }
+
+    public int hashCode() {
+        return toHashCode();
+    }
+}

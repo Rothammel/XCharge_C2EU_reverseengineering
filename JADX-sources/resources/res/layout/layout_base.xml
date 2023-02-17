@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_base" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30px" android:layout_marginTop="50px">
+        <ImageView android:id="@+id/iv_nfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_nfc"/>
+        <ImageView android:id="@+id/iv_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px"/>
+        <ImageView android:id="@+id/iv_signal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:src="@drawable/ic_signal_4"/>
+        <ImageView android:id="@+id/iv_cloud" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:src="@drawable/ic_cloud"/>
+        <ImageView android:id="@+id/iv_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:src="@drawable/ic_lock"/>
+        <ImageView android:id="@+id/iv_park" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:src="@drawable/ic_park_busy"/>
+        <TextView android:textSize="20px" android:textColor="#ff6b1b" android:id="@+id/tv_rader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px"/>
+        <ImageView android:id="@+id/iv_nfc_reading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:src="@drawable/ic_nfc_reading"/>
+        <TextView android:textSize="20px" android:textColor="@color/white" android:id="@+id/tv_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="90px">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="50px"/>
+    </LinearLayout>
+</LinearLayout>

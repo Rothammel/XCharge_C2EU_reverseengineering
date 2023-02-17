@@ -1,0 +1,1981 @@
+{
+	"protocol": "MQTT-Compact-v1",
+	"messageDefinitions": [
+		{
+			"messageType": {"id":0, "name":"ReportNetworkStatus", "version":"v1.0", "title":"设备联网状态信息"},
+			"fields": [
+				{
+					"id": 4,
+					"name": "online",
+					"desc": "设备是否联网",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"messageType": {"id":1, "name":"QuerySystemInfo", "version":"v1.0", "title":"云端查询设备系统信息"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "执行查询操作的时间",
+					"type": "timestamp"
+				}
+			]
+		},
+		{
+			"messageType": {"id":2, "name":"ReportSystemInfo", "version":"v1.0", "title":"设备上报系统信息"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid。如果是设备启动时主动上报，可以不提供sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "执行上报操作的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "setting.intervalStandby",
+					"desc": "待机等待时长，即空闲多长时间之后进入待机状态，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "setting.intervalCancelCharge",
+					"desc": "插枪等待时长，即等待插枪多长时间之后取消充电，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 38,
+					"name": "setting.intervalStartDelayFee",
+					"desc": "延误等待时长，即等待拔枪多长时间之后开始计延误费，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 39,
+					"name": "setting.intervalChargeReport",
+					"desc": "充电状态报告时间间隔，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 8,
+					"name": "setting.radar.enabled",
+					"desc": "是否启用车位占用探测雷达",
+					"type": "boolean"
+				},
+				{
+					"id": 73,
+					"name": "setting.defaultLightColor",
+					"desc": "设备正常工作时的呼吸灯颜色。RGB颜色值，其中Byte 0：透明度（暂未使用）；Byte 1：R值； Byte 2：G值；Byte 3：B值",
+					"type": "color"
+				},
+				{
+					"id": 10,
+					"name": "setting.powerFactor",
+					"type": "uint8",
+					"noDoc": true,
+					"scaleFactor": 100
+				},
+				{
+					"id": 43,
+					"name": "setting.defaultFeePolicy",
+					"desc": "缺省的资费标准的ID。具体的资费标准内容在下面的“setting.feePolicy”中设置",
+					"type": "localId",
+					"subtype": "class1"
+				},
+				{
+					"id": 12,
+					"name": "setting.powerSupplyPercent",
+					"desc": "设备整体功率限制（百分比）。相对于设备最大功率/电流的百分比，以%为单位。为负数时表示解除限制",
+					"type": "int8"
+				},
+				{
+					"id": 45,
+					"name": "setting.powerSupply",
+					"desc": "设备整体功率限制（绝对值）。功率/电流的大小，以A/kw为单位。为负数时表示解除限制",
+					"type": "int16"
+				},
+				{
+					"id": 238,
+					"name": "setting.feePolicy",
+					"desc": "若干资费标准（#LINK）的数组。当设备接收到一个或多个资费标准时，须保存到本地以备后续使用。相同ID的资费标准，用新的内容替换旧的内容。",
+					"type": "array",
+					"subtype": "compound",
+					"subtypeTitle": "FeePolicy",
+					"subfields": [
+						{"id":32, "name":"id", "type":"localId", "subtype":"class1", "desc":"资费标准的ID"},
+						{"id":161, "name":"timedPrice", "type":"array", "subtype":"timedPrice", "desc":"分时段费率表。这是一个一维数组，每6个元素（uint6类型的元素）代表一个时段的费率，这6个元素依次是：开始时间（为小时和分钟拼成的整数，例如 830表示“08:30”，含此时刻）、结束时间（不含此时刻）、电费单价（分/度）、服务费单价（分/度）、延误费单价（分/分钟）、停车费单价（分/分钟）。如果资费标准只有ID，而没有费率表，则应清除本地保存的该ID的资费标准。"}
+					]
+				},
+				{
+					"id": 239,
+					"name": "setting.ports",
+					"desc": "若干充电口（#LINK）的数组。设置各个充电口的参数",
+					"type": "array",
+					"subtype": "port",
+					"subtypeTitle": "Port",
+					"subfields": [
+						{"id":0, "name":"port", "type":"uint8", "desc":"充电口号"},
+						{"id":1, "name":"enabled", "type":"boolean", "desc":"是否启用该充电口"},
+						{"id":2, "name":"lockEnabled", "type":"boolean", "desc":"是否启用该充电口的电磁锁"},
+						{"id":3, "name":"powerSupplyPercent", "type":"int8", "desc":"充电口功率限制（百分比）。相对于充电口最大功率/电流的百分比，以%为单位。为负数时表示解除限制"},
+						{"id":36, "name":"powerSupply", "type":"int16", "desc":"充电口功率限制（绝对值）。功率/电流的大小，以A/kw为单位。为负数时表示解除限制"}
+					]
+				},
+				{
+					"id": 240,
+					"name": "setting.content",
+					"desc": "若干媒体展示位（#LINK）的数组。设置各个展示位的参数",
+					"type": "array",
+					"subtype": "position",
+					"subtypeTitle": "Position",
+					"subfields": [
+						{"id":0, "name":"position", "type":"uint8", "valueMap":"contentPosition", "productFamilyRelated":true, "desc":"展示位标识，取值范围见 #LINK"},
+						{"id":65, "name":"fileSize", "type":"uint32", "desc":"内容文件的大小，以字节为单位"},
+						{"id":34, "name":"duration", "type":"uint16", "desc":"轮播时的播放时长，以秒为单位。缺省为永久播放"},
+						{"id":3, "name":"type", "type":"uint8", "valueMap":"mediaType", "desc":"支持的媒体类型，取值范围见 #LINK"},
+						{"id":100, "name":"text", "type":"string", "desc":"文本内容"},
+						{"id":101, "name":"fileUrl", "type":"string", "desc":"内容文件的下载网址"},
+						{"id":102, "name":"fileMD5", "type":"string", "desc":"内容文件的MD5值，用于校验下载文件的正确性"}
+					]
+				},
+				{
+					"id": 124,
+					"name": "version",
+					"desc": "设备端系统软件版本号，包括固件和应用层软件的版本号，格式如：“firmware:v1.0;app:v1.1;dcb:v0.5”",
+					"type": "string"
+				},
+				{
+					"id": 125,
+					"name": "iccid",
+					"desc": "ICCID 集成电路卡识别码，是移动通信卡的唯一标识",
+					"type": "string"
+				},
+				{
+					"id": 126,
+					"name": "simId",
+					"desc": "SIM卡ID",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":3, "name":"ReportError", "version":"v1.0", "title":"设备上报故障信息"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "故障发生的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 164,
+					"name": "error.code",
+					"desc": "若干故障代码的数组。故障代码的取值范围见 #LINK",
+					"type": "array",
+					"subtype": "uint16",
+					"valueMap": "deviceError"
+				}
+			]
+		},
+		{
+			"messageType": {"id":4, "name":"ReportErrorRecovery", "version":"v1.0", "title":"设备上报故障恢复信息"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "故障恢复的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 164,
+					"name": "error.code",
+					"desc": "若干故障代码的数组。故障代码的取值范围见 #LINK",
+					"type": "array",
+					"subtype": "uint16",
+					"valueMap": "deviceError"
+				}
+			]
+		},
+		{
+			"messageType": {"id":5, "name":"ReportPlugStatus", "version":"v1.0", "title":"设备上报充电枪连接状态"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "充电枪连接状态发生变化的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 4,
+					"name": "connected",
+					"desc": "true - 已插枪；false - 已拔枪",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"messageType": {"id":16, "name":"ApplySetting", "version":"v1.0", "title":"云端发送设置信息"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送设置信息的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "intervalStandby",
+					"desc": "待机等待时长，即空闲多长时间之后进入待机状态，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "intervalCancelCharge",
+					"desc": "插枪等待时长，即等待插枪多长时间之后取消充电，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 38,
+					"name": "intervalStartDelayFee",
+					"desc": "延误等待时长，即等待拔枪多长时间之后开始计延误费，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 39,
+					"name": "intervalChargeReport",
+					"desc": "充电状态报告时间间隔，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 8,
+					"name": "radar.enabled",
+					"desc": "是否启用车位占用探测雷达",
+					"type": "boolean"
+				},
+				{
+					"id": 73,
+					"name": "defaultLightColor",
+					"desc": "设备正常工作时的呼吸灯颜色。RGB颜色值，其中Byte 0：透明度（暂未使用）；Byte 1：R值； Byte 2：G值；Byte 3：B值",
+					"type": "color"
+				},
+				{
+					"id": 10,
+					"name": "powerFactor",
+					"type": "uint8",
+					"noDoc": true,
+					"scaleFactor": 100
+				},
+				{
+					"id": 43,
+					"name": "defaultFeePolicy",
+					"desc": "缺省的资费标准的ID。具体的资费标准内容在下面的“setting.feePolicy”中设置",
+					"type": "localId",
+					"subtype": "class1"
+				},
+				{
+					"id": 12,
+					"name": "powerSupplyPercent",
+					"desc": "设备整体功率限制（百分比）。相对于设备最大功率/电流的百分比，以%为单位。为负数时表示解除限制",
+					"type": "int8"
+				},
+				{
+					"id": 45,
+					"name": "powerSupply",
+					"desc": "设备整体功率限制（绝对值）。功率/电流的大小，以A/kw为单位。为负数时表示解除限制",
+					"type": "int16"
+				},
+				{
+					"id": 238,
+					"name": "feePolicy",
+					"desc": "若干资费标准（#LINK）的数组。当设备接收到一个或多个资费标准时，须保存到本地以备后续使用。相同ID的资费标准，用新的内容替换旧的内容",
+					"type": "array",
+					"subtype": "compound",
+					"subtypeTitle": "FeePolicy",
+					"subfields": [
+						{"id":32, "name":"id", "type":"localId", "subtype":"class1", "desc":"资费标准的ID"},
+						{"id":161, "name":"timedPrice", "type":"array", "subtype":"timedPrice", "desc":"分时段费率表。这是一个一维数组，每6个元素（uint6类型的元素）代表一个时段的费率，这6个元素依次是：开始时间（为小时和分钟拼成的整数，例如 830表示“08:30”，含此时刻）、结束时间（不含此时刻）、电费单价（分/度）、服务费单价（分/度）、延误费单价（分/分钟）、停车费单价（分/分钟）。如果资费标准只有ID，而没有费率表，则应清除本地保存的该ID的资费标准"}
+					]
+				},
+				{
+					"id": 239,
+					"name": "ports",
+					"desc": "若干充电口（#LINK）的数组。设置各个充电口的参数",
+					"type": "array",
+					"subtype": "port",
+					"subtypeTitle": "Port",
+					"subfields": [
+						{"id":0, "name":"port", "type":"uint8", "desc":"充电口号"},
+						{"id":1, "name":"enabled", "type":"boolean", "desc":"是否启用该充电口"},
+						{"id":2, "name":"lockEnabled", "type":"boolean", "desc":"是否启用该充电口的电磁锁"},
+						{"id":3, "name":"powerSupplyPercent", "type":"int8", "desc":"充电口功率限制（百分比）。相对于充电口最大功率/电流的百分比，以%为单位。为负数时表示解除限制"},
+						{"id":36, "name":"powerSupply", "type":"int16", "desc":"充电口功率限制（绝对值）。功率/电流的大小，以A/kw为单位。为负数时表示解除限制"}
+					]
+				},
+				{
+					"id": 240,
+					"name": "content",
+					"desc": "若干媒体展示位（#LINK）的数组。设置各个展示位的参数",
+					"type": "array",
+					"subtype": "position",
+					"subtypeTitle": "Position",
+					"subfields": [
+						{"id":0, "name":"position", "type":"uint8", "valueMap":"contentPosition", "productFamilyRelated":true, "desc":"展示位标识，取值范围见 #LINK"},
+						{"id":65, "name":"fileSize", "type":"uint32", "desc":"内容文件的大小，以字节为单位"},
+						{"id":34, "name":"duration", "type":"uint16", "desc":"轮播时的播放时长，以秒为单位。缺省为永久播放"},
+						{"id":3, "name":"type", "type":"uint8", "valueMap":"mediaType", "desc":"支持的媒体类型，取值范围见 #LINK"},
+						{"id":100, "name":"text", "type":"string", "desc":"文本内容"},
+						{"id":101, "name":"fileUrl", "type":"string", "desc":"内容文件的下载网址"},
+						{"id":102, "name":"fileMD5", "type":"string", "desc":"内容文件的MD5值，用于校验下载文件的正确性"}
+					]
+				}
+			]
+		},
+		{
+			"messageType": {"id":17, "name":"ReportSettingResult", "version":"v1.0", "title":"设备上报设置结果"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "执行完设置的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "error.code",
+					"desc": "操作失败原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "opFailureCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":18, "name":"RequestAction", "version":"v1.0", "title":"云端发送操作指令"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送指令的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "要操作的充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 4,
+					"name": "action",
+					"desc": "操作指令代码，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "deviceAction"
+				}
+			]
+		},
+		{
+			"messageType": {"id":19, "name":"RequestUpgrade", "version":"v1.0", "title":"云端发送软件升级指令"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送指令的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 4,
+					"name": "component",
+					"desc": "需要升级的软件部件，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "upgradeComponent"
+				},
+				{
+					"id": 5,
+					"name": "partial",
+					"desc": "是否为增量（差分）升级。False表示完整升级",
+					"type": "boolean"
+				},
+				{
+					"id": 69,
+					"name": "fileSize",
+					"desc": "升级包的大小，以字节为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 102,
+					"name": "version",
+					"desc": "要升级的软件版本号",
+					"type": "string"
+				},
+				{
+					"id": 103,
+					"name": "dependentVersion",
+					"desc": "依赖版本号。如果存在此字段，则只有当设备中软件为此依赖版本时方可执行此升级指令",
+					"type": "string"
+				},
+				{
+					"id": 104,
+					"name": "fileUrl",
+					"desc": "升级包的下载网址",
+					"type": "string"
+				},
+				{
+					"id": 105,
+					"name": "fileMD5",
+					"desc": "升级包的MD5值，用于校验下载文件的正确性",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":20, "name":"ReportActionResult", "version":"v1.0", "title":"设备上报操作结果"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "执行完指令的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "error.code",
+					"desc": "操作失败原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "opFailureCause"
+				},
+				{
+					"id": 5,
+					"name": "status",
+					"desc": "操作结果状态，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "actionStatus"
+				}
+			]
+		},
+		{
+			"messageType": {"id":21, "name":"QueryLog", "version":"v1.0", "title":"云端查询设备日志"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "下达查询操作的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 68,
+					"name": "startTime",
+					"desc": "查询日志的时间范围：从 startTime 到 endTime",
+					"type": "timestamp"
+				},
+				{
+					"id": 69,
+					"name": "endTime",
+					"desc": " ",
+					"type": "timestamp"
+				},
+				{
+					"id": 102,
+					"name": "uploadUrl",
+					"desc": "接收日志信息的网址。设备端需要对日志内容进行zip压缩，然后以“HTTP POST Content-Type: application/octet-stream”的方式上传到指定的网址",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":22, "name":"UploadLog", "version":"v1.0", "title":"设备上传日志"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "日志上传完成的时间。注意：上传完日志文件之后，才能向云端发送本消息",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "error.code",
+					"desc": "操作失败原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "opFailureCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":32, "name":"RequestChargeQRCode", "version":"v1.0", "title":"设备请求充电二维码"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "请求时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 4,
+					"name": "permanent",
+					"desc": "是否使用永久二维码，默认为 false",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"messageType": {"id":33, "name":"SendChargeQRCode", "version":"v1.0", "title":"云端回应充电二维码"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送二维码的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "expireInterval",
+					"desc": "二维码的剩余失效时长，以秒为单位。到失效时间就不应该再使用该二维码了，应重新请求新的二维码",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "error.code",
+					"desc": "操作失败原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "opFailureCause"
+				},
+				{
+					"id": 101,
+					"name": "qrCode",
+					"desc": "二维码内容。是一个字符串，设备端需将其展示为符合标准的二维码图像",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":34, "name":"RequestChargeWithIDCard", "version":"v1.0"},
+			"noDoc": true,
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"type": "uint8"
+				},
+				{
+					"id": 68,
+					"name": "timestamp",
+					"type": "timestamp"
+				},
+				{
+					"id": 101,
+					"name": "sourceId",
+					"type": "string"
+				},
+				{
+					"id": 102,
+					"name": "nonce",
+					"type": "string"
+				},
+				{
+					"id": 103,
+					"name": "signature",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":35, "name":"RequestStartCharge", "version":"v1.0", "title":"云端请求开始充电"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "请求时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID。该ID将用于跟踪和指代整个充电过程。",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 36,
+					"name": "feePolicyId",
+					"desc": "适用的资费标准的ID",
+					"type": "localId",
+					"subtype": "class1"
+				},
+				{
+					"id": 37,
+					"name": "autoStopAt.interval",
+					"desc": "结束条件：充电时长，以分钟为单位。结束条件包括：interval、powerPercent、power、fee、almostFull，可以同时设置多个结束条件，一旦达到其中任一条件设备端即应停止充电。如果没有设置结束条件，则默认为充满后停止",
+					"type": "uint16"
+				},
+				{
+					"id": 6,
+					"name": "autoStopAt.powerPercent",
+					"desc": "结束条件：电池电量的百分比，单位为%",
+					"type": "uint8"
+				},
+				{
+					"id": 71,
+					"name": "autoStopAt.power",
+					"desc": "结束条件：已充电量，单位为0.01度",
+					"type": "uint32",
+					"scaleFactor": 100
+				},
+				{
+					"id": 72,
+					"name": "autoStopAt.fee",
+					"desc": "结束条件：充电费用，单位为分",
+					"type": "uint32"
+				},
+				{
+					"id": 9,
+					"name": "autoStopAt.almostFull",
+					"desc": "结束条件：是否在接近充满时（小电流充电超过一定时间）自动结束充电",
+					"type": "boolean"
+				},
+				{
+					"id": 10,
+					"name": "priority.level",
+					"noDoc": true,
+					"type": "uint8"
+				},
+				{
+					"id": 75,
+					"name": "balance",
+					"noDoc": true,
+					"type": "uint32"
+				},
+				{
+					"id": 12,
+					"name": "forcePlugging",
+					"desc": "是否要求先插枪再充电。如果为True而当前用户未插枪，则直接取消充电。缺省为False",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"messageType": {"id":36, "name":"RequestRefuseCharge", "version":"v1.0", "title":"云端通知设备拒绝充电"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "拒绝时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 36,
+					"name": "cause.code",
+					"desc": "拒绝原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "refuseChargeCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":37, "name":"ReportChargeStarted", "version":"v1.0", "title":"设备上报充电已开始"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "上报时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "bCap",
+					"desc": "整车动力蓄电池额定容量，单位为：安培*小时",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "bVol",
+					"desc": "整车动力电池额定电压，单位为伏",
+					"type": "uint16"
+				},
+				{
+					"id": 102,
+					"name": "vId",
+					"desc": "车辆识别代码",
+					"type": "string"
+				},
+				{
+					"id": 103,
+					"name": "bId",
+					"desc": "电池识别代码",
+					"type": "string"
+				},
+				{
+					"id": 9,
+					"name": "bType",
+					"desc": "电池种类，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "batteryType"
+				},
+				{
+					"id": 104,
+					"name": "commVer",
+					"desc": "整车通讯协议版本号",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":38, "name":"ConfirmChargeStarted", "version":"v1.0", "title":"云端回应充电开始"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				}
+			]
+		},
+		{
+			"messageType": {"id":39, "name":"ReportChargeCancelled", "version":"v1.0", "title":"设备上报充电已取消"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "取消时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "cause.code",
+					"desc": "取消原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "cancelChargeCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":40, "name":"ReportChargeStatus", "version":"v1.0", "title":"设备上报充电状态"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "数据采集时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 68,
+					"name": "data.0",
+					"desc": "已充电量。单位为0.01度",
+					"type": "uint32",
+					"arrayLength": 8,
+					"scaleFactor": 100
+				},
+				{
+					"id": 69,
+					"name": "data.1",
+					"desc": "当前功率，单位为瓦",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 70,
+					"name": "data.2",
+					"desc": "当前电流，单位为毫安",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 71,
+					"name": "data.3",
+					"desc": "累计电费，单位为分",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 72,
+					"name": "data.4",
+					"desc": "累计服务费，单位为分",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 9,
+					"name": "data.6",
+					"desc": "电池电量百分比，单位为%",
+					"type": "uint8",
+					"arrayLength": 8
+				},
+				{
+					"id": 42,
+					"name": "data.7",
+					"desc": "预计剩余充电时间，单位为分钟",
+					"type": "uint16",
+					"arrayLength": 8
+				}
+			]
+		},
+		{
+			"messageType": {"id":41, "name":"ReportChargePaused", "version":"v1.0", "title":"设备上报充电已暂停"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "充电暂停时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "cause.data",
+					"desc": "导致暂定的设备故障代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "deviceError"
+				}
+			]
+		},
+		{
+			"messageType": {"id":42, "name":"ReportChargeResumed", "version":"v1.0", "title":"设备上报充电已恢复"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "充电恢复时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "cause.data",
+					"noDoc": true,
+					"type": "uint16",
+					"valueMap": "deviceError"
+				}
+			]
+		},
+		{
+			"messageType": {"id":43, "name":"RequestAutoStop", "version":"v1.0", "title":"云端设置自动结束条件"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送设置信息的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "autoStopAt.interval",
+					"desc": "结束条件：充电时长，以分钟为单位。结束条件包括：interval、powerPercent、power、fee、almostFull，可以同时设置多个结束条件，一旦达到其中任一条件设备端即应停止充电。如果没有设置结束条件，则默认为充满后停止",
+					"type": "uint16"
+				},
+				{
+					"id": 5,
+					"name": "autoStopAt.powerPercent",
+					"desc": "结束条件：电池电量的百分比，单位为%",
+					"type": "uint8"
+				},
+				{
+					"id": 70,
+					"name": "autoStopAt.power",
+					"desc": "结束条件：已充电量，单位为0.01度",
+					"type": "uint32",
+					"scaleFactor": 100
+				},
+				{
+					"id": 71,
+					"name": "autoStopAt.fee",
+					"desc": "结束条件：充电费用，单位为分",
+					"type": "uint32"
+				},
+				{
+					"id": 8,
+					"name": "autoStopAt.almostFull",
+					"desc": "结束条件：是否在接近充满时（小电流充电超过一定时间）自动结束充电",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"messageType": {"id":44, "name":"ReportAutoStopResult", "version":"v1.0", "title":"设备响应结束条件设置"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "完成设置的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "error.code",
+					"desc": "操作失败原因的代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "opFailureCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":45, "name":"RequestStopCharge", "version":"v1.0", "title":"云端通知设备结束充电"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "发送结束指令的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "cause.code",
+					"desc": "结束原因代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "stopChargeCause"
+				}
+			]
+		},
+		{
+			"messageType": {"id":46, "name":"ReportChargeStopped", "version":"v1.0", "title":"设备上报充电已结束"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "结束充电的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 36,
+					"name": "cause.code",
+					"desc": "结束原因代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "stopChargeCause"
+				},
+				{
+					"id": 5,
+					"name": "delayCounted",
+					"noDoc": true,
+					"type": "boolean"
+				},
+				{
+					"id": 38,
+					"name": "cause.data.interval",
+					"desc": "结束条件：充电时长，以分钟为单位。只返回实际导致充电结束的结束条件",
+					"type": "uint16"
+				},
+				{
+					"id": 7,
+					"name": "cause.data.powerPercent",
+					"desc": "结束条件：电池电量的百分比，单位为%",
+					"type": "uint8"
+				},
+				{
+					"id": 72,
+					"name": "cause.data.power",
+					"desc": "结束条件：已充电量，单位为0.01度",
+					"type": "uint32",
+					"scaleFactor": 100
+				},
+				{
+					"id": 73,
+					"name": "cause.data.fee",
+					"desc": "结束条件：充电费用，单位为分",
+					"type": "uint32"
+				},
+				{
+					"id": 10,
+					"name": "cause.data.almostFull",
+					"desc": "结束条件：接近充满（小电流充电超过一定时间）",
+					"type": "boolean"
+				},
+				{
+					"id": 75,
+					"name": "data.0",
+					"desc": "已充电量。单位为0.01度",
+					"type": "uint32",
+					"arrayLength": 8,
+					"scaleFactor": 100
+				},
+				{
+					"id": 78,
+					"name": "data.3",
+					"desc": "累计电费，单位为分",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 79,
+					"name": "data.4",
+					"desc": "累计服务费，单位为分",
+					"type": "uint32",
+					"arrayLength": 8
+				},
+				{
+					"id": 16,
+					"name": "data.6",
+					"desc": "电池电量百分比，单位为%",
+					"type": "uint8",
+					"arrayLength": 8
+				},
+				{
+					"id": 49,
+					"name": "data.7",
+					"desc": "预计剩余充电时间，单位为分钟",
+					"type": "uint16",
+					"arrayLength": 8
+				},
+				{
+					"id": 50,
+					"name": "cause.data",
+					"desc": "如果是设备故障导致的结束充电，指明故障代码，其取值范围见 #LINK",
+					"type": "uint16",
+					"valueMap": "deviceError"
+				}
+			]
+		},
+		{
+			"messageType": {"id":47, "name":"ReportDelayCountStarted", "version":"v1.0"},
+			"noDoc": true,
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"type": "localId",
+					"subtype": "class2"
+				}
+			]
+		},
+		{
+			"messageType": {"id":48, "name":"ReportDelayFeeStarted", "version":"v1.0", "title":"设备上报开始计延误费"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"noDoc": true,
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "开始计费的时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				}
+			]
+		},
+		{
+			"messageType": {"id":49, "name":"ReportChargeEnded", "version":"v1.0", "title":"设备上报充电完成"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				},
+				{
+					"id": 68,
+					"name": "chargeStopTime",
+					"desc": "充电结束时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 69,
+					"name": "delayFeeStartTime",
+					"desc": "延误费开始计费时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 70,
+					"name": "chargeEndTime",
+					"desc": "充电完成时间。用户拔枪挪车后才算充电完成",
+					"type": "timestamp"
+				},
+				{
+					"id": 39,
+					"name": "chargeInterval",
+					"desc": "充电时长，以分钟为单位，小数部分四舍五入",
+					"type": "uint16"
+				},
+				{
+					"id": 40,
+					"name": "delayInterval",
+					"desc": "已计费的延误时长，以分钟为单位，小数部分四舍五入",
+					"type": "uint16"
+				},
+				{
+					"id": 73,
+					"name": "powerCharged",
+					"desc": "已充电量，以0.01度为单位",
+					"type": "uint32",
+					"scaleFactor": 100
+				},
+				{
+					"id": 10,
+					"name": "batteryCharged",
+					"desc": "电池已充百分比，以%为单位",
+					"type": "uint8"
+				},
+				{
+					"id": 75,
+					"name": "feeTotal",
+					"desc": "总费用，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 76,
+					"name": "feePower",
+					"desc": "电费，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 77,
+					"name": "feeService",
+					"desc": "服务费，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 78,
+					"name": "feeDelay",
+					"desc": "延误费，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 79,
+					"name": "cardBalance",
+					"desc": "支付充电账单之后的储值卡余额，以分为单位。在线充电时不必上报此值",
+					"type": "uint32"
+				},
+				{
+					"id": 240,
+					"name": "chargeDetail",
+					"desc": "若干充电明细记录（#LINK）的数组。设备端需按不同的价格时间分段（见资费标准）、充电状态（充电中和充电结束待拔枪）来记录充电过程的明细",
+					"type": "array",
+					"subtype": "compound",
+					"subtypeTitle": "ChargeDetailItem",
+					"subfields": [
+						{"id":64, "name":"startTime", "type":"timestamp", "desc": "本时段的开始时间"},
+						{"id":65, "name":"endTime", "type":"timestamp", "desc": "本时段的结束时间"},
+						{"id":66, "name":"feeTotal", "type":"uint32", "desc": "本时段产生的总费用，以分为单位"},
+						{"id":67, "name":"feePower", "type":"uint32", "desc": "本时段产生的电费，以分为单位"},
+						{"id":68, "name":"feeService", "type":"uint32", "desc": "本时段产生的服务费，以分为单位"},
+						{"id":69, "name":"feeDelay", "type":"uint32", "desc": "本时段产生的延误费，以分为单位"},
+						{"id":70, "name":"powerCharged", "type":"uint32", "scaleFactor":100, "desc": "本时段充电电量，以0.01度为单位"},
+						{"id":39, "name":"delayInterval", "type":"uint16", "desc": "本时段延误时长，以分钟为单位，小数部分四舍五入"}
+					]
+				}
+			]
+		},
+		{
+			"messageType": {"id":50, "name":"ConfirmChargeEnded", "version":"v1.0", "title":"云端回应充电完成"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 34,
+					"name": "billId",
+					"desc": "充电账单的ID",
+					"type": "localId",
+					"subtype": "class2"
+				}
+			]
+		},
+		{
+			"messageType": {"id":224, "name":"ReportLocalChargeStarted", "version":"v1.0", "title":"设备上报离线充电开始"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "充电开始时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 36,
+					"name": "bCap",
+					"desc": "整车动力蓄电池额定容量，单位为：安培*小时",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "bVol",
+					"desc": "整车动力电池额定电压，单位为伏",
+					"type": "uint16"
+				},
+				{
+					"id": 112,
+					"name": "cardSourceId",
+					"desc": "离线充电卡的卡号",
+					"type": "string"
+				},
+				{
+					"id": 113,
+					"name": "vId",
+					"desc": "车辆识别代码",
+					"type": "string"
+				},
+				{
+					"id": 114,
+					"name": "bId",
+					"desc": "电池识别代码",
+					"type": "string"
+				},
+				{
+					"id": 6,
+					"name": "bType",
+					"desc": "电池种类，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "batteryType"
+				},
+				{
+					"id": 115,
+					"name": "commVer",
+					"desc": "整车通讯协议版本号",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":225, "name":"ReportLocalChargeEnded", "version":"v1.0", "title":"设备补报离线充电账单"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 3,
+					"name": "port",
+					"desc": "充电口号",
+					"type": "uint8"
+				},
+				{
+					"id": 36,
+					"name": "bCap",
+					"desc": "整车动力蓄电池额定容量，单位为：安培*小时",
+					"type": "uint16"
+				},
+				{
+					"id": 37,
+					"name": "bVol",
+					"desc": "整车动力电池额定电压，单位为伏",
+					"type": "uint16"
+				},
+				{
+					"id": 70,
+					"name": "chargeStartTime",
+					"desc": "充电开始时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 71,
+					"name": "chargeStopTime",
+					"desc": "充电结束时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 72,
+					"name": "chargeEndTime",
+					"desc": "充电完成时间。用户拔枪挪车后才算充电完成",
+					"type": "timestamp"
+				},
+				{
+					"id": 41,
+					"name": "chargeInterval",
+					"desc": "充电时长，以分钟为单位，小数部分四舍五入",
+					"type": "uint16"
+				},
+				{
+					"id": 11,
+					"name": "batteryCharged",
+					"desc": "电池已充百分比，以%为单位",
+					"type": "uint8"
+				},
+				{
+					"id": 74,
+					"name": "powerCharged",
+					"desc": "已充电量，以0.01度为单位",
+					"type": "uint32",
+					"scaleFactor": 100
+				},
+				{
+					"id": 76,
+					"name": "feeTotal",
+					"desc": "总费用，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 77,
+					"name": "feePower",
+					"desc": "电费，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 78,
+					"name": "feeService",
+					"desc": "服务费，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 79,
+					"name": "cardBalance",
+					"desc": "支付充电账单之后的储值卡余额，以分为单位",
+					"type": "uint32"
+				},
+				{
+					"id": 112,
+					"name": "cardSourceId",
+					"desc": "离线充电卡的卡号",
+					"type": "string"
+				},
+				{
+					"id": 113,
+					"name": "vId",
+					"desc": "车辆识别代码",
+					"type": "string"
+				},
+				{
+					"id": 114,
+					"name": "bId",
+					"desc": "电池识别代码",
+					"type": "string"
+				},
+				{
+					"id": 21,
+					"name": "bType",
+					"desc": "电池种类，其取值范围见 #LINK",
+					"type": "uint8",
+					"valueMap": "batteryType"
+				},
+				{
+					"id": 115,
+					"name": "commVer",
+					"desc": "整车通讯协议版本号",
+					"type": "string"
+				},
+				{
+					"id": 244,
+					"name": "chargeDetail",
+					"desc": "若干充电明细记录（#LINK）的数组。设备端需按不同的价格时间分段（见资费标准）、充电状态（充电中和充电结束待拔枪）来记录充电过程的明细",
+					"type": "array",
+					"subtype": "compound",
+					"subtypeTitle": "ChargeDetailItem",
+					"subfields": [
+						{"id":64, "name":"startTime", "type":"timestamp", "desc": "本时段的开始时间"},
+						{"id":65, "name":"endTime", "type":"timestamp", "desc": "本时段的结束时间"},
+						{"id":66, "name":"feeTotal", "type":"uint32", "desc": "本时段产生的总费用，以分为单位"},
+						{"id":67, "name":"feePower", "type":"uint32", "desc": "本时段产生的电费，以分为单位"},
+						{"id":68, "name":"feeService", "type":"uint32", "desc": "本时段产生的服务费，以分为单位"},
+						{"id":69, "name":"feeDelay", "type":"uint32", "desc": "本时段产生的延误费，以分为单位"},
+						{"id":70, "name":"powerCharged", "type":"uint32", "scaleFactor":100, "desc": "本时段充电电量，以0.01度为单位"},
+						{"id":39, "name":"delayInterval", "type":"uint16", "desc": "本时段延误时长，以分钟为单位，小数部分四舍五入"}
+					]
+				}
+			]
+		},
+		{
+			"messageType": {"id":240, "name":"RequestVerification", "version":"v1.0", "title":"云端发送验证请求"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。必须大于或等于20000",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "验证开始时间",
+					"type": "timestamp"
+				},
+				{
+					"id": 36,
+					"name": "expireInterval",
+					"desc": "验证请求的有效时长，以秒为单位",
+					"type": "uint16"
+				},
+				{
+					"id": 101,
+					"name": "customer",
+					"desc": "验证请求者的名称",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"messageType": {"id":241, "name":"ReportVerification", "version":"v1.0", "title":"设备响应验证结果"},
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"desc": "Session ID。须使用请求消息的sid",
+					"type": "localId",
+					"subtype": "class3"
+				},
+				{
+					"id": 65,
+					"name": "time",
+					"desc": "用户执行验证操作的时间",
+					"type": "timestamp"
+				}
+			]
+		},
+		{
+			"messageType": {"id":250, "name":"SayHello", "version":"v1.0"},
+			"noDoc": true,
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"type": "localId",
+					"subtype": "class3"
+				}
+			]
+		},
+		{
+			"messageType": {"id":251, "name":"AnswerHello", "version":"v1.0"},
+			"noDoc": true,
+			"fields": [
+				{
+					"id": 32,
+					"name": "sid",
+					"type": "localId",
+					"subtype": "class3"
+				}
+			]
+		}
+	],
+	"valueMaps": {
+		"deviceError": {
+			"1004":4100,"1005":4101,"1007":4103,"1009":4105,"1010":4112,"1012":4114,"1013":4115,"1014":4116,"1015":4117,"1016":4118,
+			"1017":4119,"1018":4120,"1023":4131,"1024":4132,"1025":4133,"1080":4224,"2005":8197,"2010":8208,"2014":8212,"2015":8213,
+			"2016":8214,"2017":8215,"2020":8224,"3001":12289,"3004":12292,"3005":12293,"3006":12294,"3007":12295,"3008":12296,
+			"3009":12297,"3018":12312,"4001":16385,"4002":16386,"4003":16387,"4004":16388,"4005":16389,"4006":16390,"4007":16391,
+			"4008":16392,"4009":16393,"4010":16400,"4011":16401,"4020":16416,"5001":20481,"5002":20482,"5003":20483,"5004":20484,
+			"5005":20485,"5006":20486,"5007":20487,"5008":20488,"5009":20489,"5010":20496,"5011":20497,"5012":20498,"5013":20499,
+			"5014":20500,"5015":20501,"5016":20502,"5017":20503,"5018":20504,"6003":24579,"9000":36864,"0001":1,"100F":4111,
+			"10A0":4256,"10B0":4272,"300B":12299,"300C":12300
+		},
+		"contentPosition": {
+			"company":10, "logo":11, "scanHintTitle":13, "scanHintDesc":14, "scanAdvsite":15,
+			"pullAdvsite":16, "wakeUpAdvsite":17, "idleAdvsite":18, "chargingAdvsite":19,
+			"customized":30, "beforeCharging":32, "afterCharging":33
+		},
+		"contentPositionC2": {
+			"welcome":12
+		},
+		"contentPositionC6": {
+			"welcome":31
+		},
+		"mediaType": {
+			"text":0, "jpg":10, "png":11, "gif":12, "webp":13, "gif-v":20, "mp4":21
+		},
+		"deviceAction": {
+			"restart":0, "lockPlug":1, "unlockPlug":2
+		},
+		"upgradeComponent": {
+			"app":0, "os":1, "dcb":2
+		},
+		"actionStatus": {
+			"received":0, "success":1, "failed":2
+		},
+		"refuseChargeCause": {
+			"BAD_QRCODE":0, "USERGROUP_FORBIDDEN":1, "BILL_UNPAID":2, "CHARGE_UNFINISHED":3, "NOT_RESERVED":10,
+			"NOT_QUEUED":11, "RESERVE_UNDUE":12, "QUEUE_UNDUE":13, "RESERVE_TIMEOUT":14, "QUEUE_TIMEOUT":15
+		},
+		"cancelChargeCause": {
+			"PLUG_TIMEOUT":0, "NOT_PLUGGED":1, "USER_CANCEL":2, "NO_FEEPOLICY":10, "CHECK_TIMEOUT":20, "CHECK_FAILED":21, "DISABLED":22
+		},
+		"stopChargeCause": {
+			"USER_REMOTE":0, "USER_LOCAL":1, "ADMIN_REMOTE":2, "AUTO":3, "ERROR":4
+		},
+		"opFailureCause": {
+		},
+		"batteryType": {
+			"0":0, "1":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8
+		}
+	},
+	"valueMapDescriptions": {
+		"deviceError": [
+			{"v":1, "desc":"充电桩通讯失败"},
+			{"v":4100, "desc":"电表通讯485检测失败"},
+			{"v":4101, "desc":"电源模块CAN失败"},
+			{"v":4103, "desc":"充电口电表报警"},
+			{"v":4105, "desc":"充电口A绝缘通讯模块报警"},
+			{"v":4111, "desc":"温度报警"},
+			{"v":4112, "desc":"充电口B绝缘通讯模块报警"},
+			{"v":4114, "desc":"BMS需求电压过低或过高，此为车辆故障"},
+			{"v":4115, "desc":"A相电压过高"},
+			{"v":4116, "desc":"A相电压过低"},
+			{"v":4117, "desc":"B相电压过高"},
+			{"v":4118, "desc":"B相电压过低"},
+			{"v":4119, "desc":"C相电压过高"},
+			{"v":4120, "desc":"C相电压过低"},
+			{"v":4131, "desc":"泄放检测失败"},
+			{"v":4132, "desc":"直流检测失败"},
+			{"v":4133, "desc":"绝缘检测失败"},
+			{"v":4224, "desc":"电源模块报警"},
+			{"v":4256, "desc":"交流防雷报警"},
+			{"v":4272, "desc":"地线报警"},
+			{"v":8197, "desc":"充电口温度报警"},
+			{"v":8208, "desc":"BMSCAN检测失败，此为车辆故障"},
+			{"v":8212, "desc":"BMS通讯故障，此为车辆故障"},
+			{"v":8213, "desc":"充电口BMS超时报警，此为车辆故障"},
+			{"v":8214, "desc":"充电口端接触器故障"},
+			{"v":8215, "desc":"电池反接"},
+			{"v":8224, "desc":"辅助电源没有上电"},
+			{"v":12289, "desc":"达到充电机设定条"},
+			{"v":12292, "desc":"BMS终止，此为车辆故障"},
+			{"v":12293, "desc":"充电机过温"},
+			{"v":12294, "desc":"充电连接故障"},
+			{"v":12295, "desc":"充电机内部过温"},
+			{"v":12296, "desc":"电量不能传送，此为车辆故障"},
+			{"v":12297, "desc":"充电机急停"},
+			{"v":12299, "desc":"电流不匹配，此为车辆故障"},
+			{"v":12300, "desc":"电压异常，可能是车辆，也可能是桩故障"},
+			{"v":12312, "desc":"自检超时"},
+			{"v":16385, "desc":"车位占用超时"},
+			{"v":16386, "desc":"急停按钮被按下"},
+			{"v":16387, "desc":"达到单体电压设定值"},
+			{"v":16388, "desc":"充电机终止"},
+			{"v":16389, "desc":"充电连接器故障"},
+			{"v":16390, "desc":"电池组温度过高"},
+			{"v":16391, "desc":"电流超过需求值"},
+			{"v":16392, "desc":"电压异常，此为车辆故障"},
+			{"v":16393, "desc":"直流接触器故障"},
+			{"v":16400, "desc":"充电口发生异常"},
+			{"v":16401, "desc":"车辆已经充满，此为车辆故障"},
+			{"v":16416, "desc":"达到总电压设定值"},
+			{"v":20481, "desc":"CRO超时"},
+			{"v":20482, "desc":"CRO超时"},
+			{"v":20483, "desc":"CTS超时"},
+			{"v":20484, "desc":"CRO超时"},
+			{"v":20485, "desc":"CCS超时"},
+			{"v":20486, "desc":"CST超时"},
+			{"v":20487, "desc":"CSD超时"},
+			{"v":20488, "desc":"其它自检故障"},
+			{"v":20489, "desc":"电源模块未上电"},
+			{"v":20496, "desc":"电源模块地址冲突。对于C2是指充电桩未初始化"},
+			{"v":20497, "desc":"充电桩地线未接"},
+			{"v":20498, "desc":"充电桩交流接线缺相"},
+			{"v":20499, "desc":"急停按钮被按下"},
+			{"v":20500, "desc":"充电桩电压异常"},
+			{"v":20501, "desc":"充电桩电流异常"},
+			{"v":20502, "desc":"充电桩温度异常"},
+			{"v":20503, "desc":"充电桩存在漏电"},
+			{"v":20504, "desc":"充电桩与汽车通讯异常"},
+			{"v":20505, "desc":"车端指示充电暂停"},
+			{"v":20506, "desc":"车端暂停超时，结束充电"},
+			{"v":24579, "desc":"液位报警"},
+			{"v":36864, "desc":"充电枪未插紧"},
+			{"v":40960, "desc":"涓流充电超时，结束充电"},
+			{"v":40961, "desc":"车位锁故障"},
+			{"v":40962, "desc":"车位锁电池耗尽"}
+		],
+		"contentPosition": [
+			{"v":10, "desc":"Logo"},
+			{"v":11, "desc":"唤醒界面Logo"},
+			{"v":12, "desc":"唤醒界面欢迎语"},
+			{"v":13, "desc":"充电提示（标题）"},
+			{"v":14, "desc":"充电提示（描述）"},
+			{"v":15, "desc":"待充电界面广告位"},
+			{"v":16, "desc":"待拔枪界面广告位"},
+			{"v":17, "desc":"唤醒界面广告位"},
+			{"v":18, "desc":"待机界面广告位"},
+			{"v":19, "desc":"充电中界面广告位"},
+			{"v":30, "desc":"唤醒界面（文字或图片均可）"},
+			{"v":31, "desc":"唤醒界面广告位（2）"},
+			{"v":32, "desc":"充电前界面广告位"},
+			{"v":33, "desc":"闲置界面广告位"}
+		],
+		"mediaType": [
+			{"v":0, "desc":"文本"},
+			{"v":10, "desc":"JPEG图片"},
+			{"v":11, "desc":"PNG图片"},
+			{"v":12, "desc":"GIF图片（静态）"},
+			{"v":13, "desc":"WebP图片"},
+			{"v":20, "desc":"GIF图片（动态）"},
+			{"v":21, "desc":"MP4视频"}
+		],
+		"deviceAction": [
+			{"v":0, "desc":"重启设备"},
+			{"v":1, "desc":"锁定充电枪"},
+			{"v":2, "desc":"解锁充电枪"}
+		],
+		"upgradeComponent": [
+			{"v":0, "desc":"设备端应用层系统"},
+			{"v":1, "desc":"设备端操作系统"},
+			{"v":2, "desc":"辅助控制板系统"}
+		],
+		"actionStatus": [
+			{"v":0, "desc":"已收到操作指令，并已下载相关的文件"},
+			{"v":1, "desc":"已成功执行"},
+			{"v":2, "desc":"执行失败。具体的原因在error.code中指明"}
+		],
+		"refuseChargeCause": [
+			{"v":0, "desc":"用户扫描的二维码错误或已失效"},
+			{"v":1, "desc":"根据规则，禁止当前用户在该设备充电"},
+			{"v":2, "desc":"当前用户有未支付的充电账单"},
+			{"v":3, "desc":"当前用户有未结束的充电过程"},
+			{"v":10, "desc":"当前用户未预约"},
+			{"v":11, "desc":"当前用户未排队"},
+			{"v":12, "desc":"当前用户已预约但尚未到预约时间"},
+			{"v":13, "desc":"当前用户已排队但尚未排到"},
+			{"v":14, "desc":"预约时间已过，需重新预约"},
+			{"v":15, "desc":"排队已过号，需重新排队"}
+		],
+		"cancelChargeCause": [
+			{"v":0, "desc":"用户插枪超时"},
+			{"v":1, "desc":"用户未插枪。如果启动充电请求中要求必须先插枪才能充电，则在检测到用户未插枪时使用此代码"},
+			{"v":2, "desc":"用户取消充电。例如在等待插枪期间，用户执行了其它导致离开充电流程的操作"},
+			{"v":10, "desc":"缺少资费标准。收到该错误之后，服务端会发送资费（ApplySetting）并再次发送充电请求（RequestStartCharge）"},
+			{"v":20, "desc":"自检超时"},
+			{"v":21, "desc":"自检失败，须另行上报设备故障消息"},
+			{"v":22, "desc":"充电口未启用（或被禁用）"}
+		],
+		"stopChargeCause": [
+			{"v":0, "desc":"用户自行远程结束"},
+			{"v":1, "desc":"用户（操作设备）自行结束"},
+			{"v":2, "desc":"管理员远程结束"},
+			{"v":3, "desc":"自动结束。须进一步用cause.data.interval等字段说明具体的结束条件"},
+			{"v":4, "desc":"设备故障。须进一步用cause.data说明具体的故障原因"}
+		],
+		"opFailureCause": [
+			{"v":1, "desc":"待定义"}
+		],
+		"batteryType": [
+			{"v":1, "desc":"铅酸电池"},
+			{"v":2, "desc":"镍氢电池"},
+			{"v":3, "desc":"磷酸铁锂电池"},
+			{"v":4, "desc":"锰酸锂电池"},
+			{"v":5, "desc":"钴酸锂电池"},
+			{"v":6, "desc":"三元材料电池"},
+			{"v":7, "desc":"聚合物锂离子电池"},
+			{"v":8, "desc":"钛酸锂电池"},
+			{"v":0, "desc":"其他电池"}
+		]
+	}
+}

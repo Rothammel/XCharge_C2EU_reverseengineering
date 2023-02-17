@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_status_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_welcome_logo" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="180px" android:maxHeight="180px"/>
+        <TextView android:textSize="72px" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_status_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20px"/>
+        <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+        <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_bottom1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70px" android:text="@string/welcome_hint_text2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_bottom2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:text="@string/welcome_hint_text1" android:layout_above="@+id/tv_bottom1" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

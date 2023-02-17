@@ -1,0 +1,8 @@
+{
+	"provider":108,
+	"magicNumber":"3347882661",
+	"cloudHost":"cdlink.anyocharging.com",
+	"cloudPort":8003,
+	"softwareVersion":"1.01.19",
+	"protocolVersion":"2.02"
+}

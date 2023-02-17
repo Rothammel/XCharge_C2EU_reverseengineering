@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_width">768px</dimen>
+    <dimen name="item_height">768px</dimen>
+    <dimen name="dialog_loading_width">500px</dimen>
+    <dimen name="dialog_loading_height">300px</dimen>
+    <dimen name="dialog_showinfo_width">550px</dimen>
+    <dimen name="dialog_showinfo_height">410px</dimen>
+</resources>

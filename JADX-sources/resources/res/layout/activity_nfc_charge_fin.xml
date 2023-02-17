@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="44px" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chargecomplete_text"/>
+        <TextView android:textSize="40px" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30px"/>
+        <TextView android:textSize="20px" android:textColor="@color/white" android:gravity="center" android:id="@+id/bill_tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24px"/>
+    </LinearLayout>
+    <include android:id="@+id/include_one_line" layout="@layout/layout_bottom_one_text"/>
+    <include android:id="@+id/include_two_line" layout="@layout/layout_bottom_two_line"/>
+</FrameLayout>

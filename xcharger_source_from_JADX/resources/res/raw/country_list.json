@@ -1,0 +1,353 @@
+﻿{	
+	"ad": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"al": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"at": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "de",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"au": {
+		"zone": "+10:00",
+		"useDaylightTime":false,
+		"lang": "en",
+		"money": "AUD",
+		"moneyDisp": "AUD"
+	},
+	"ba": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"be": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"bg": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"by": {
+		"zone": "+03:00",
+		"useDaylightTime":false,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"ch": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "de",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"cn": {
+		"zone": "+08:00",
+		"useDaylightTime":false,
+		"lang": "zh",
+		"money": "CNY",
+		"moneyDisp": "Ԫ"
+	},
+	"cz": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"de": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "de",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"dk": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"ee": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"es": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"fi": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"fo": {
+		"zone": "+00:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"fr": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"gb": {
+		"zone": "+00:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"gr": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"hr": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"hu": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"ie": {
+		"zone": "+00:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"is": {
+		"zone": "+00:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"it": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"jp": {
+		"zone": "+09:00",
+		"useDaylightTime":false,
+		"lang": "en",
+		"money": "JPY",
+		"moneyDisp": "Yen"
+	},
+	"li": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "de",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"lt": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"lu": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"lv": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"mc": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"md": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"me": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"mk": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"mt": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"nl": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"no": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"pl": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"pt": {
+		"zone": "+00:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"ro": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"rs": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"ru": {
+		"zone": "+03:00",
+		"useDaylightTime":false,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"se": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"si": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"sk": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"sm": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"tr": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "TRY",
+		"moneyDisp": "Lira"
+	},
+	"ua": {
+		"zone": "+02:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"va": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	},
+	"yu": {
+		"zone": "+01:00",
+		"useDaylightTime":true,
+		"lang": "en",
+		"money": "EUR",
+		"moneyDisp": "Euro"
+	}
+
+}

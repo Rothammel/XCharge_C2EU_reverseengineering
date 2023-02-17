@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="100px" android:paddingTop="20px" android:paddingRight="50px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="253px" android:layout_height="253px">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false"/>
+                <ImageView android:id="@+id/iv_qrcode" android:layout_width="230px" android:layout_height="230px"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="320px" android:layout_height="250px" android:layout_marginLeft="20px">
+                <TextView android:textSize="34px" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="30px" android:textColor="@color/white" android:id="@+id/tv_subhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20px"/>
+                <TextView android:textSize="24px" android:textColor="@color/white" android:id="@+id/tv_device_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15px" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15px">
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_phase" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/iv_phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:layout_marginRight="5px" android:src="@drawable/ic_charger_type_single"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+        <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_service_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="30px" android:textColor="@color/white" android:id="@+id/tv_power_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:layout_above="@+id/tv_service_price" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

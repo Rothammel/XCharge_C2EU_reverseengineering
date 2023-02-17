@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height">
+    <include layout="@layout/layout_base"/>
+    <com.xcharge.charger.p006ui.p009c2.activity.widget.BubbleView android:id="@+id/popView" android:layout_width="@dimen/item_width" android:layout_height="@dimen/item_height"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="34px" android:textColor="@color/white" android:id="@+id/tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="120px" android:textColor="@color/white" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20px" android:text="00:00:00"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30px">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="150px" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="30px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cur_cost"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                    <TextView android:textSize="48px" android:textColor="@color/white" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_fee_unit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#60ffffff" android:layout_width="1px" android:layout_height="100px" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="150px" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="30px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_power"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                    <TextView android:textSize="48px" android:textColor="@color/white" android:id="@+id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="28px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_kw"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_current" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_current" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/iv_phase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:layout_marginRight="5px" android:src="@drawable/ic_charger_type_single"/>
+        </LinearLayout>
+        <TextView android:textSize="28px" android:textColor="@color/white" android:id="@+id/tv_kwatt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20px"/>
+    </LinearLayout>
+</FrameLayout>

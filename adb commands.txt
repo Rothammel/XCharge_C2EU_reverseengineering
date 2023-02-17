@@ -1,0 +1,18 @@
+display always on: adb shell settings put global stay_on_while_plugged_in 3
+display normal:    adb shell settings put global stay_on_while_plugged_in 0
+
+log:               adb pull /data/data/com.xcharge.charger/logs/charger_app.log
+config:            adb pull /data/data/com.xcharge.charger/files/xcloud_family_mqtt_cfg.json
+
+adb over network:
+adb tcpip 5555
+adb connect 192.168.0.160
+
+screeshots:        adb shell screencap -p /data/data/com.xcharge.charger/download/screenshot/screencap.png
+                   adb pull /data/data/com.xcharge.charger/download/screenshot/screencap.png
+
+logcat
+
+replace app:       adb install -r MyApp.apk
+
+https://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp/3623727#3623727

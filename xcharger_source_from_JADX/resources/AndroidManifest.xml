@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" android:versionCode="1" android:versionName="2.2.10.23" package="com.xcharge.charger" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="19"/>
+    <permission android:name="com.atsmart.xcharger.SEND_NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GRANT_REVOKE_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application android:theme="@style/Theme.Light.NoTitle.BLACK" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.xcharge.charger.application.MultiProtocolCharger" android:configChanges="locale" android:allowBackup="false">
+        <activity android:label="@string/app_name" android:name="com.xcharge.charger.MainActivity" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ZoomWindowAnimTheme" android:name="com.xcharge.charger.p006ui.p009c2.activity.HomeActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.xcharge.charger.p006ui.p009c2.activity.advert.PullAdActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.xcharge.charger.p006ui.p009c2.activity.advert.ScanAdActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.xcharge.charger.ui.c2.activity.advert.WakeupAdActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCChargeBalanceActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCChargeFinActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCChargeInitActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCChargeWaittingStartActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCChargingActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.nfc.NFCConfigPersnalCardActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.charge.nfc.NFCParkBusyHintActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.ChargeCompleteActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.ChargeCostActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.ChargingActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.QrcodeActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.WaittingStartChargeActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.ChargeDelayedActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.charge.online.ReservedActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.AutoFinishFaultActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.ExceptionFaultActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.NetworkErrorActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.fault.OnlineParkBusyHintActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.RepairFaultActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.fault.EnableActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.test.TestCharge" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.test.TestChargeActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.test.TestLED" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.test.TestLock" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.test.TestModeActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.test.TestModeBase"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.TestNFC" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.ui.c2.activity.fault.TestRadar" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:name="com.xcharge.charger.p006ui.p009c2.activity.test.SetActivity" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.Light.NoTitle.TRANSPARENT" android:name="com.xcharge.charger.p006ui.p009c2.activity.upgrade.UpgradeActivity" android:launchMode="singleInstance" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"/>
+        <service android:name="com.xcharge.charger.device.p005c2.service.C2DeviceService"/>
+        <service android:name="com.xcharge.charger.boot.service.BootService"/>
+        <service android:name="com.xcharge.charger.test.service.TestService"/>
+        <service android:name="com.xcharge.charger.core.service.DCAPService"/>
+        <service android:name="com.xcharge.charger.p006ui.adpter.p008c2.UIService"/>
+        <service android:name="com.xcharge.charger.protocol.family.xcloud.service.XCloudService"/>
+        <service android:name="com.xcharge.charger.protocol.xconsole.service.XConsoleService"/>
+        <service android:name="com.xcharge.charger.protocol.anyo.service.AnyoCloudService"/>
+        <service android:name="com.xcharge.charger.protocol.xmsz.service.XMSZCloudService"/>
+        <service android:name="com.xcharge.charger.protocol.ocpp.service.OcppCloudService"/>
+        <service android:name="com.xcharge.charger.protocol.monitor.service.MonitorCloudService"/>
+        <provider android:name="com.xcharge.charger.data.provider.ChargerContentProvider" android:authorities="com.xcharge.charger.data.provider.content"/>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:background="@drawable/ic_loading_bg" android:layout_width="@dimen/dialog_loading_width" android:layout_height="@dimen/dialog_loading_height">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/imageView1" android:background="@drawable/ic_loading_icon" android:paddingTop="19px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44px" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_point_1" android:background="@drawable/ic_dialog_loading_point" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_point_2" android:background="@drawable/ic_dialog_loading_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px"/>
+        <ImageView android:id="@+id/iv_point_3" android:background="@drawable/ic_dialog_loading_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px"/>
+    </LinearLayout>
+    <TextView android:textSize="24px" android:textColor="#2a2b2a" android:gravity="center" android:id="@+id/tv_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_marginTop="10px" android:layout_marginRight="20px" android:layout_below="@+id/imageView1" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

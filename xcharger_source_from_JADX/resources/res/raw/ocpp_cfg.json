@@ -1,0 +1,12 @@
+{
+	"url":"",
+	"chargePointModel":"C2EU",
+	"chargePointVendor":"XC",
+	"qrcode":"In preparation ...",
+	"authInfos":[],
+	"maps":{"MeterValueSampleInterval":"60","StopTxnSampledData":"Temperature,Current.Import,Voltage,Power.Active.Import,Energy.Active.Import.Register","MeterValuesAlignedData":"Temperature,Current.Import,Voltage,Power.Active.Import,Energy.Active.Import.Register","MeterValuesAlignedDataMaxLength":"50","MeterValuesSampledData":"Temperature,Current.Import,Voltage,Power.Active.Import,Energy.Active.Import.Register","StopTxnSampledDataMaxLength":"50","StopTxnAlignedDataMaxLength":"50","MeterValuesSampledDataMaxLength":"50","StopTxnAlignedData":"Temperature,Current.Import,Voltage,Power.Active.Import,Energy.Active.Import.Register","ClockAlignedDataInterval":"900","ConnectionTimeOut":"90","HeartbeatInterval":"60"},
+	"maxChargingProfiles":{},
+	"defChargingProfiles":{},
+	"listVersion":0,
+	"wsDebug":false
+}

@@ -1,0 +1,10 @@
+{
+	"vendor_name":"40",
+	"vendor_id":4,
+	"point_id":"1",
+	"center_ip_port":"59.110.9.30:8115",
+	"max_offline_time":600,
+	"min_balance":3000,
+	"time_for_reserve":300,
+	"qrcode_url":"http://cdz.xmszzy.cn:6010/ChargeCenter/app.jsf"
+}

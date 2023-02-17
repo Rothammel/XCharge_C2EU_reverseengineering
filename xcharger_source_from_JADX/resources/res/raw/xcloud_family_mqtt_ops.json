@@ -1,0 +1,12 @@
+{
+	"binaryMode":false,
+	"debugMode":false,
+	"keepAlive":60,
+	"connectionTimeout":120,
+	"broker":"",
+	"userName":"",
+	"password":"",
+	"clientId":"",
+	"upTopic":"",
+	"downTopic":""
+}
