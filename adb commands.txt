@@ -4,9 +4,11 @@ display normal:    adb shell settings put global stay_on_while_plugged_in 0
 log:               adb pull /data/data/com.xcharge.charger/logs/charger_app.log
 config:            adb pull /data/data/com.xcharge.charger/files/xcloud_family_mqtt_cfg.json
 
+adb push test.jpg /data/data/com.xcharge.charger/advert/idleAdvsite
+
 adb over network:
 adb tcpip 5555
-adb connect 192.168.0.160
+adb connect 192.168.0.164
 
 screeshots:        adb shell screencap -p /data/data/com.xcharge.charger/download/screenshot/screencap.png
                    adb pull /data/data/com.xcharge.charger/download/screenshot/screencap.png
